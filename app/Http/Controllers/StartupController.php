@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreStartupRequest;
 use App\Http\Requests\UpdateStartupRequest;
 use App\Models\Startup;
+use App\Http\Resources\StartupResource;
 
 class StartupController extends Controller
 {
@@ -15,9 +17,11 @@ class StartupController extends Controller
      */
     public function index()
     {
-        //
-    }
 
+        $startups = Startup::all();
+    
+        return $this->sendResponse(StartupResource::collection($startups), 'Startups retrieved successfully.');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -25,7 +29,7 @@ class StartupController extends Controller
      */
     public function create()
     {
-        //
+        return view('startups.create');
     }
 
     /**
@@ -36,7 +40,7 @@ class StartupController extends Controller
      */
     public function store(StoreStartupRequest $request)
     {
-        //
+        dd('here not');
     }
 
     /**
@@ -82,5 +86,16 @@ class StartupController extends Controller
     public function destroy(Startup $startup)
     {
         //
+    }
+
+    /**
+     * Lista de las startups
+     *
+     * @param  \App\Models\Startup  $startup
+     * @return \Illuminate\Http\Response
+     */
+    public function startupList()
+    {
+        return view('startups.index');
     }
 }

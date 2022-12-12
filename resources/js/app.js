@@ -5,9 +5,28 @@
  */
 
 import './bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../css/style.css';
 import '../css/custom.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// import '../assets/vendor/aos/aos.css';
+// import '../assets/vendor/glightbox/css/glightbox.min.css';
+// import '../assets/vendor/remixicon/remixicon.css';
+// import '../assets/vendor/swiper/swiper-bundle.min.css';
+
+// import '../assets/vendor/purecounter/purecounter_vanilla';
+// import '../assets/vendor/aos/aos';
+// import '../assets/vendor/bootstrap/js/bootstrap.bundle.min';
+// import '../assets/vendor/glightbox/js/glightbox.min';
+// import '../assets/vendor/isotope-layout/isotope.pkgd.min';
+// import '../assets/vendor/swiper/swiper-bundle.min';
+// import '../assets/vendor/php-email-form/validate';
+
+//import aos from 'aos';
+//import PureCounter from '@srexi/purecounterjs';
+//import '../assets/js/main';
+
+//aos.init();
 
 import { createApp } from 'vue';
 
@@ -18,9 +37,19 @@ import { createApp } from 'vue';
  */
 
 const app = createApp({});
-
 import ExampleComponent from './components/ExampleComponent.vue';
+import StartupsComponent from './components/StartupsComponent.vue';
+import InformationComponent from './components/InformationComponent.vue';
+import SingleComponent from './components/SingleComponent.vue';
+import StartupCreateComponent from './components/forms/StartupCreateComponent.vue';
+import { Bootstrap5Pagination } from 'laravel-vue-pagination';
+
 app.component('example-component', ExampleComponent);
+app.component('startups-component', StartupsComponent);
+app.component('startup-create-component', StartupCreateComponent);
+app.component('information-component', InformationComponent);
+app.component('single-component', SingleComponent);
+app.component('Pagination', Bootstrap5Pagination);
 
 /**
  * The following block of code may be used to automatically register your

@@ -13,7 +13,6 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
   color: #444444;
   background: linear-gradient(90deg, #004E8F 0%, #2388B9 100%);
 }
@@ -238,10 +237,12 @@ section {
   padding: 10px 0 10px 30px;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
-  font-weight: 700;
-  color: #013289;
   white-space: nowrap;
   transition: 0.3s;
+  /*editado:*/
+  font-weight: 500;
+  line-height: 22px;
+  color: #0071BC;
 }
 
 .navbar a i,

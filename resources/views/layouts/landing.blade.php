@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>FlexStart Bootstrap Template - Index</title>
-  <meta content="" name="description">
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <meta content="" name="keywords">
+  <title>{{ config('app.name', 'Startup Community') }}</title> 
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/favicon.ico" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dm+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <!-- Scripts -->
   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
+  <!-- Landing CSS Files -->
+  <link href="landing/vendor/aos/aos.css" rel="stylesheet">
+  <link href="landing/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="landing/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="landing/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- <link href="landing/css/style.css" rel="stylesheet"> -->
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -42,7 +35,7 @@
 
       <nav id="navbar" class="navbar">
         <ul class="ms-auto">
-          <li><a class="nav-link scrollto active" href="#hero">home</a></li>
+          <li><a class="nav-link scrollto active" href="javascript:void(0)">home</a></li>
           <li><a href="#">Startup</a></li>
           <li><a href="#">Profesionales</a></li>
           <li><a href="#">Inversores</a></li>
@@ -55,9 +48,11 @@
                   </a>
                   @else
                       <li><a href="#">Iniciar sesión</a></li>
-
                       @if (Route::has('register'))
-                        <li><a class="getstarted scrollto" href="#about">Crear Cuenta</a></li>
+                        
+                          
+
+                      <a class="btn btn-primary btn-lg" href="{{route('login')}}">Crear Cuenta</a>
                       @endif
                   @endauth
           @endif
@@ -133,17 +128,25 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="landing/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="landing/vendor/aos/aos.js"></script>
+  <script src="landing/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="landing/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="landing/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="landing/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="landing/vendor/php-email-form/validate.js"></script>
 
+  <script src="landing/vendor/search/js/extention/choices.js"></script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false
+      });
+
+    </script>
+  <!-- Template Main JS File-->
+  <script src="landing/js/main.js"></script>
 </body>
 
 </html>

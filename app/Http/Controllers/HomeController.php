@@ -24,10 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (auth()->user()->hasRole(Role::all())) {
+        //if (auth()->user()->hasRole(Role::all())) {
             return view('dashboard');
-        }
-        return redirect()->route('select-role');
+        //}
+        //return redirect()->route('select-role');
     }
 
     /**

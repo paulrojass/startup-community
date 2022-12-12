@@ -42,4 +42,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Lista de startups de un usuario.
+     */
+    public function startups()
+    {
+        return $this->hasMany(Startup::class);
+    }
 }

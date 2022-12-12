@@ -5,7 +5,7 @@
     <!-- ======= About Section ======= -->
     <section id="hero" class="hero d-flex align-items-center">
         <div class="row d-flex position-relative mx-auto">
-          <div class="col-lg-12 d-flex align-items-center" data-aos="fade-out" data-aos-delay="200">
+          <div class="col-lg-12 d-flex align-items-center">
             <img src="img/astro_bg_home.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-12 d-flex align-items-center position-absolute" data-aos="zoom-out" data-aos-delay="400">
@@ -14,6 +14,16 @@
           <div class="col-lg-12 text-center position-absolute">
             <h1>Bienvenido a un Universo <br />de Alto Valor</h1>
             <h3>La comunidad que conecta Startups, Profesionales e Inversión</h3>
+            <form action="{{route('startups')}}">
+            <div class="wrapper d-flex justify-content-center">
+                <div class="searchBox" >
+                  <div class="searchField">
+                    <input type="text" class="input" placeholder="">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg px-3"><i class="bi bi-search pr-5" aria-hidden="true"></i> Buscar</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -57,9 +67,21 @@
     <section id="features" class="features">
 
       <div class="container">
-        <div class="row pt-5">
+        <div class="row pt-5 position-relative">
           <div class="col-lg-12" data-aos="zoom-in">
             <img src="img/startup.png" alt="">
+          </div>
+          <div class="col-lg-12 position-absolute" >
+            <div class="container">
+
+              <div class="row justify-content-end">
+                <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono1.png" alt=""></div>
+                <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono2.png" alt=""></div>
+                <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono3.png" alt=""></div>
+                <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono4.png" alt=""></div>
+                <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono5.png" alt=""></div>
+              </div>
+            </div>
           </div>
         </div> <!-- / row -->
       </div>
@@ -70,24 +92,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 text-center">
-            <button class="btn btn-primary">Startup</button>
+            <button class="btn btn-outline-primary">Startup</button>
             <img src="img/astro_startup.png" alt="">
           </div>
           <div class="col-lg-4 text-center">
             <img src="img/astro_professional.png" alt="">
             <h1>
-              <button class="btn btn-primary">Profesional</button>
+              <button class="btn btn-outline-primary">Profesional</button>
             </h1>
           </div>
           <div class="col-lg-4 text-center">
             <img src="img/astro_investor.png" alt="">
-            <button class="btn btn-primary">Inversor</button>
+            <button class="btn btn-outline-primary">Inversor</button>
           </div>
         </div>
         <div class="row pb-5">
           <div class="col-lg-12 text-center">
-            <h2>¿Estas preparado para el despegue?</h2>
-            <button class="btn btn-primary">Crear Cuenta</button>
+            <h3>¿Estas preparado para <br/>el despegue?</h3>
+            <button class="btn btn-primary btn-lg btn-block">Crear Cuenta</button>
           </div>
         </div>
       </div>

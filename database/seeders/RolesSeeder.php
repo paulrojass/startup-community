@@ -34,13 +34,13 @@ class RolesSeeder extends Seeder
                 'name' => 'admin'
             ],
             [
-                'name' => 'emprendedor'
+                'name' => 'entrepreneur'
             ],
             [
-                'name' => 'inversor'
+                'name' => 'investor'
             ],
             [
-                'name' => 'profesional'
+                'name' => 'professional'
             ]
         ];
 

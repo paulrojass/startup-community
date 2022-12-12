@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('startups', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->string('name');
+            $table->string('category_id')->nullable();
+            $table->string('description');
+            $table->string('url')->nullable();
+            $table->decimal('financial_need', 10, 2)->nullable();
+            $table->string('logo')
+                ->default('storage/images/logos/default.png');
+            $table->string('country');
             $table->timestamps();
         });
     }
