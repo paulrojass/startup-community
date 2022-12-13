@@ -31,11 +31,6 @@
 
 <script>
     export default {
-        data() {
-            return {
-                startup : this.startup
-            }
-        },
         props: [
             'startup'
         ]

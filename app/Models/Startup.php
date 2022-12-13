@@ -36,4 +36,15 @@ class Startup extends Model
         return $this->belongsTo(User::class);
     }
 
+    /**
+     * Scope a query to only include popular users.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeSearch($query, $value)
+    {
+        return $query->where('name', 'LIKE', '%' . $value . '%')
+            ->orWhere('description', 'LIKE', '%' . $value . '%');
+    }
 }

@@ -6,10 +6,10 @@
         <div class="position-absolute">
             <img src="img/backgrounds/bg_login_1.png" class="img-fluid" alt="">
         </div>
-        <div class=" position-absolute">
+        <div class="position-absolute">
             <img src="img/backgrounds/bg_login_2.png" class="img-fluid" alt="">
         </div>
-        <div class="d-flex position-absolute">
+        <div class="position-absolute">
             <img src="img/backgrounds/bg_login_3.png" class="img-fluid" alt="">
         </div>
 

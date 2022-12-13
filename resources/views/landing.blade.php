@@ -14,13 +14,15 @@
           <div class="col-lg-12 text-center position-absolute">
             <h1>Bienvenido a un Universo <br />de Alto Valor</h1>
             <h3>La comunidad que conecta Startups, Profesionales e Inversión</h3>
-            <form action="{{route('startups')}}">
-            <div class="wrapper d-flex justify-content-center">
-                <div class="searchBox" >
+            <form action="{{route('startups')}}" method="GET">
+              <div class="wrapper d-flex justify-content-center">
+                <div class="searchBox d-flex justify-content-between" >
                   <div class="searchField">
-                    <input type="text" class="input" placeholder="">
+                    <input type="text" name='search' id="search" class="input" placeholder="">
                   </div>
-                  <button type="submit" class="btn btn-primary btn-lg px-3"><i class="bi bi-search pr-5" aria-hidden="true"></i> Buscar</button>
+                  <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-lg mr-auto"><i class="bi bi-search pe-3" aria-hidden="true"></i> Buscar</button>
+                  </div>
                 </div>
               </div>
             </form>
@@ -76,9 +78,9 @@
 
               <div class="row justify-content-end">
                 <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono1.png" alt=""></div>
-                <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono2.png" alt=""></div>
-                <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono3.png" alt=""></div>
-                <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono4.png" alt=""></div>
+                <div class="col-lg-10 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono2.png" alt=""></div>
+                <div class="col-lg-8 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono3.png" alt=""></div>
+                <div class="col-lg-10 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono4.png" alt=""></div>
                 <div class="col-lg-12 my-4 d-flex justify-content-center" data-aos="fade-left"><img src="img/icono5.png" alt=""></div>
               </div>
             </div>
@@ -106,12 +108,14 @@
             <button class="btn btn-outline-primary">Inversor</button>
           </div>
         </div>
+        {{--
         <div class="row pb-5">
           <div class="col-lg-12 text-center">
             <h3>¿Estas preparado para <br/>el despegue?</h3>
             <button class="btn btn-primary btn-lg btn-block">Crear Cuenta</button>
           </div>
         </div>
+        --}}
       </div>
     </section><!-- End Features Section -->
 

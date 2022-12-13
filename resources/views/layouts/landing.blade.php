@@ -10,7 +10,7 @@
   <title>{{ config('app.name', 'Startup Community') }}</title> 
 
   <!-- Favicons -->
-  <link href="img/favicon.ico" rel="icon">
+  <link href="favicon.ico" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -35,7 +35,7 @@
 
       <nav id="navbar" class="navbar">
         <ul class="ms-auto">
-          <li><a class="nav-link scrollto active" href="javascript:void(0)">home</a></li>
+          {{-- <li><a class="nav-link scrollto active" href="javascript:void(0)">home</a></li>
           <li><a href="#">Startup</a></li>
           <li><a href="#">Profesionales</a></li>
           <li><a href="#">Inversores</a></li>
@@ -55,7 +55,7 @@
                       <a class="btn btn-primary btn-lg" href="{{route('login')}}">Crear Cuenta</a>
                       @endif
                   @endauth
-          @endif
+          @endif --}}
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -74,6 +74,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
+          {{--
           <div class="col-lg-5 col-md-12 footer-info">
             <h4>Starup Company</h4>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
@@ -119,7 +120,16 @@
             <img src="img/logo_blanco.png" alt="StartUp">
 
           </div>
+          --}}
 
+          <div class="container">
+      <div class="copyright" style="color:white">
+        &copy; Copyright. All Rights Reserved
+      </div>
+      <div class="credits" style="color:white">
+        Designed by <a href="https://getbootstrap.com/">Boostrap</a>
+      </div>
+    </div>
         </div>
       </div>
     </div>
@@ -137,14 +147,14 @@
   <script src="landing/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="landing/vendor/php-email-form/validate.js"></script>
 
-  <script src="landing/vendor/search/js/extention/choices.js"></script>
-    <script>
-      const choices = new Choices('[data-trigger]',
-      {
-        searchEnabled: false
-      });
+  <!-- <script src="landing/vendor/search/js/extention/choices.js"></script>
+  <script>
+    const choices = new Choices('[data-trigger]',
+    {
+      searchEnabled: false
+    });
 
-    </script>
+  </script> -->
   <!-- Template Main JS File-->
   <script src="landing/js/main.js"></script>
 </body>

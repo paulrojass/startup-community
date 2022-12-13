@@ -14,13 +14,15 @@ class StartupResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
-        // return [
-        //     'id' => $this->id,
-        //     'name' => $this->name,
-        //     'type' => $this->type,
-        //     'created_at' => $this->created_at->format('d/m/Y'),
-        //     'updated_at' => $this->updated_at->format('d/m/Y'),
-        // ];
+        //return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'description' => $this->description,
+            'type' => $this->type,
+            'logo' => $this->logo,
+            'created_at' => $this->created_at->format('d/m/Y'),
+            'updated_at' => $this->updated_at->format('d/m/Y'),
+        ];
     }
 }

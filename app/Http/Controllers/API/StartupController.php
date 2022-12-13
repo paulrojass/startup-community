@@ -19,11 +19,21 @@ class StartupController extends BaseController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $startups = Startup::all();
+        //dd($request->all());
 
-        return $this->sendResponse(StartupResource::collection($startups), 'Startups retrieved successfully.');
+        if ($request->search) {
+            $startups = Startup::search($request->search)->paginate(10);
+            //$startups = Startup::paginate(10);
+
+        } else {
+            //$startups = Startup::all();
+            $startups = Startup::paginate(10);
+        }
+
+        return response()->json($startups);
+        //return $this->sendResponse(StartupResource::collection($startups), 'Startups retrieved successfully.');
     }
     /**
      * Store a newly created resource in storage.

@@ -49,7 +49,7 @@ app.component('startups-component', StartupsComponent);
 app.component('startup-create-component', StartupCreateComponent);
 app.component('information-component', InformationComponent);
 app.component('single-component', SingleComponent);
-app.component('Pagination', Bootstrap5Pagination);
+app.component('pagination', Bootstrap5Pagination);
 
 /**
  * The following block of code may be used to automatically register your
