@@ -23,5 +23,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ProfileSeeder::class);
         \App\Models\User::factory(50)->create();
         //\App\Models\Startup::factory(50)->create();
+        $this->call(StartupSeeder::class);
     }
 }

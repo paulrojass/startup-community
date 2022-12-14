@@ -14,14 +14,14 @@
           <div class="col-lg-12 text-center position-absolute">
             <h1>Bienvenido a un Universo <br />de Alto Valor</h1>
             <h3>La comunidad que conecta Startups, Profesionales e Inversión</h3>
-            <form action="{{route('startups')}}" method="GET">
+            <form action="{{route('startups')}}" method="GET" class="mt-5">
               <div class="wrapper d-flex justify-content-center">
                 <div class="searchBox d-flex justify-content-between" >
                   <div class="searchField">
                     <input type="text" name='search' id="search" class="input" placeholder="">
                   </div>
                   <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-primary btn-lg mr-auto"><i class="bi bi-search pe-3" aria-hidden="true"></i> Buscar</button>
+                    <button type="submit" class="btn btn-primary mr-auto"><i class="bi bi-search pe-3" aria-hidden="true"></i> Buscar</button>
                   </div>
                 </div>
               </div>
@@ -35,13 +35,13 @@
     <section id="clients" class="clients">
       <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-lg-4 text-center">
+          <div class="col-sm-4 text-center py-3">
             <button type="button" class="btn btn-outline-primary btn-lg ">STARTUP O PROYECTOS</button>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-sm-4 text-center py-3">
             <button type="button" class="btn btn-outline-primary btn-lg ">PROFESIONALES</button>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-sm-4 text-center py-3">
             <button type="button" class="btn btn-outline-primary btn-lg ">INVERSOR</button>
           </div>
         </div>
@@ -66,7 +66,7 @@
       </div>
     </section>
     <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+    <section id="features" class="features pt-0">
 
       <div class="container">
         <div class="row pt-5 position-relative">
@@ -90,35 +90,36 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Features Section ======= -->
-    <section id="features" data-aos="fade-up" class="features pb-0" style="background: url('img/background_moon.png') no-repeat center bottom;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 text-center">
-            <button class="btn btn-outline-primary">Startup</button>
-            <img src="img/astro_startup.png" alt="">
-          </div>
-          <div class="col-lg-4 text-center">
-            <img src="img/astro_professional.png" alt="">
-            <h1>
-              <button class="btn btn-outline-primary">Profesional</button>
-            </h1>
-          </div>
-          <div class="col-lg-4 text-center">
-            <img src="img/astro_investor.png" alt="">
-            <button class="btn btn-outline-primary">Inversor</button>
+    <section id="features" data-aos="fade-up" class="features_end">
+
+        <div class="container-fluid">
+          <div class="row pb-3 ">
+            <div class=" col-4 d-flex justify-content-end ">
+              <button class="btn btn-outline-primary" style="width:200px">Startup</button>
+            </div>
+            <div class=" col-4 d-flex justify-content-center ">
+              <button class="btn btn-outline-primary" style="width:200px">Profesional</button>
+            </div>
+            <div class=" col-4 d-flex justify-content-start ">
+              <button class="btn btn-outline-primary" style="width:200px">Inversor</button>
+            </div>
           </div>
         </div>
-        {{--
-        <div class="row pb-5">
-          <div class="col-lg-12 text-center">
-            <h3>¿Estas preparado para <br/>el despegue?</h3>
-            <button class="btn btn-primary btn-lg btn-block">Crear Cuenta</button>
+        <div class="d-flex position-relative">
+          <div class="container-fluid p-0">
+            <img src="img/backgrounds/luna_astronautas.png" class="img-fluid">
           </div>
+          <!-- <div class="container-fluid d-flex position-absolute">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h3>¿Estas preparado para <br/>el despegue?</h3>
+                  <button class="btn btn-primary btn-lg btn-block">Crear Cuenta</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
-        --}}
-      </div>
-    </section><!-- End Features Section -->
-
-
+  </section><!-- End Features Section -->
 </div>
 @endsection

@@ -6,7 +6,8 @@
 
 import './bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import '../css/style.css';
+import '../css/style-landing.css';
+import '../css/style-dashboard.css';
 import '../css/custom.css';
 
 // import '../assets/vendor/aos/aos.css';

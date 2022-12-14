@@ -21,8 +21,8 @@ class StartupResource extends JsonResource
             'description' => $this->description,
             'type' => $this->type,
             'logo' => $this->logo,
-            'created_at' => $this->created_at->format('d/m/Y'),
-            'updated_at' => $this->updated_at->format('d/m/Y'),
+            'created_at' => $this->created_at->format('m - Y'),
+            'updated_at' => $this->updated_at->format('m - Y'),
         ];
     }
 }

@@ -50,7 +50,7 @@
                                     <h4>No hay resultados en la busqueda</h4>
                                 </div>
                             </div>
-                            <div class="col-md-6 overflow-auto" v-if="startup" style="max-height:500px">
+                            <div class="col-md-6 overflow-auto pt-2" v-if="startup" style="max-height:500px">
                                 <information-component
                                 v-if="this.startup"
                                 :startup="this.startup"

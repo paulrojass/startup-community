@@ -15,8 +15,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- Scripts -->
-  @vite(['resources/sass/app.scss', 'resources/js/app.js'])
   <!-- Landing CSS Files -->
+  @vite(['resources/sass/app.scss', 'resources/js/app.js'])
   <link href="landing/vendor/aos/aos.css" rel="stylesheet">
   <link href="landing/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="landing/vendor/remixicon/remixicon.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="/" class="logo d-flex align-items-center">
-        <img src="img/frame.png" alt="">
+        <img src="img/logo_blanco.png" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
@@ -71,7 +71,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    <div class="footer-top">
+    <div class="footer-top pt-3 pb-2">
       <div class="container">
         <div class="row gy-4">
           {{--
@@ -124,10 +124,7 @@
 
           <div class="container">
       <div class="copyright" style="color:white">
-        &copy; Copyright. All Rights Reserved
-      </div>
-      <div class="credits" style="color:white">
-        Designed by <a href="https://getbootstrap.com/">Boostrap</a>
+        &copy; STARTUP COMMUNITY Todos los derechos reservados.
       </div>
     </div>
         </div>

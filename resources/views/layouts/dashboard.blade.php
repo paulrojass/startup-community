@@ -19,9 +19,9 @@
         
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
         <!-- Custom styles for this template
-        -->
-        <link href="dashboard/css/sb-admin-2.min.css" rel="stylesheet">
-        <!-- Scripts -->
+    -->
+    <!-- <link href="dashboard/css/sb-admin-2.css" rel="stylesheet"> -->
+    <!-- Scripts -->
         
 </head>
 

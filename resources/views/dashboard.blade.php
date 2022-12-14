@@ -8,7 +8,6 @@
                     <div class="row">
                     <form action="">
             <div class="wrapper ">
-
                 <div class="searchBox justify-content-center">
                   <div class="dropdown">
                     <div class="defaultOption search-font">

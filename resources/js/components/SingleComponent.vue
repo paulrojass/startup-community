@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <p class="card-text">{{startup.description}}</p>
-                <h6>Sept 2022</h6>
+                <h6></h6>
             </div>
         </div>
     </div>
@@ -30,9 +30,15 @@
 </template>
 
 <script>
+    import moment from 'moment';
     export default {
         props: [
             'startup'
-        ]
+        ],
+        computed: {
+            formattedDate() {
+                return moment(this.startup.created_at).format('MMM YYYY')
+            }
+        }
     }
 </script>
