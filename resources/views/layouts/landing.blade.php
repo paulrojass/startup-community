@@ -30,33 +30,34 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="/" class="logo d-flex align-items-center">
-        <img src="img/logo_blanco.png" alt="">
+        <img src="img/logo_white.png" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
+        {{--  
         <ul class="ms-auto">
-          {{-- <li><a class="nav-link scrollto active" href="javascript:void(0)">home</a></li>
+          <li><a class="nav-link scrollto active" href="javascript:void(0)">home</a></li>
           <li><a href="#">Startup</a></li>
           <li><a href="#">Profesionales</a></li>
-          <li><a href="#">Inversores</a></li>
-          @if (Route::has('login'))
-                  @auth
-                  <a class="dropdown-item" href="{{ route('logout') }}"
-                      onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                      {{ __('Logout') }}
-                  </a>
-                  @else
-                      <li><a href="#">Iniciar sesión</a></li>
-                      @if (Route::has('register'))
-                        
-                          
-
-                      <a class="btn btn-primary btn-lg" href="{{route('login')}}">Crear Cuenta</a>
-                      @endif
-                  @endauth
-          @endif --}}
+          <li><a href="{{route('landings.investor')}}">Inversores</a></li>
         </ul>
+        @if (Route::has('login'))
+                @auth
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+                @else
+                    <li><a href="#">Iniciar sesión</a></li>
+                    @if (Route::has('register'))
+                      
+                        
+
+                    <a class="btn btn-primary btn-lg" href="{{route('login')}}">Crear Cuenta</a>
+                    @endif
+                @endauth
+        @endif--}}
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -64,7 +65,7 @@
   </header><!-- End Header -->
 
   <div id="app">
-      <main class="pt-4" id="main">
+      <main id="main">
           @yield('content')
       </main>
   </div>
@@ -155,5 +156,38 @@
   <!-- Template Main JS File-->
   <script src="landing/js/main.js"></script>
 </body>
+
+<!-- Vertically centered modal -->
+<div class="modal" id="modal-investor" tabindex="-1" aria-labelledby="modal-investor-Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+          
+        <form method="post" class="php-email-form">
+            <div class="mb-3">
+              <h3 class="title">Conecta con Startup Community</h3>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombres y apellidos</label>
+              <input type="name" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" name="message" rows="6" required></textarea>
+            </div>
+            <div class="mb-3 mx-5">
+              <button type="submit" class="btn btn-primary btn-block">ENVIAR</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 </html>

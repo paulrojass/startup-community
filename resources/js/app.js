@@ -44,6 +44,9 @@ import InformationComponent from './components/InformationComponent.vue';
 import SingleComponent from './components/SingleComponent.vue';
 import StartupCreateComponent from './components/forms/StartupCreateComponent.vue';
 import { Bootstrap5Pagination } from 'laravel-vue-pagination';
+//Landings
+import HomeComponent from './components/landings/HomeComponent.vue';
+import InvestorComponent from './components/landings/InvestorComponent.vue';
 
 app.component('example-component', ExampleComponent);
 app.component('startups-component', StartupsComponent);
@@ -51,6 +54,8 @@ app.component('startup-create-component', StartupCreateComponent);
 app.component('information-component', InformationComponent);
 app.component('single-component', SingleComponent);
 app.component('pagination', Bootstrap5Pagination);
+app.component('home-component', HomeComponent);
+app.component('investor-component', InvestorComponent);
 
 /**
  * The following block of code may be used to automatically register your

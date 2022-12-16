@@ -1,7 +1,5 @@
-@extends('layouts.landing')
-
-@section('content')
-<div>
+<template>
+  <div>
     <!-- ======= About Section ======= -->
     <section id="hero" class="hero d-flex align-items-center">
         <div class="row d-flex position-relative mx-auto">
@@ -14,21 +12,30 @@
           <div class="col-lg-12 text-center position-absolute">
             <h1>Bienvenido a un Universo <br />de Alto Valor</h1>
             <h3>La comunidad que conecta Startups, Profesionales e Inversión</h3>
-            <form action="{{route('startups')}}" method="GET" class="mt-5">
-              <div class="wrapper d-flex justify-content-center">
-                <div class="searchBox d-flex justify-content-between" >
-                  <div class="searchField">
-                    <input type="text" name='search' id="search" class="input" placeholder="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-6">
+                <form action="startups" method="GET" class="mt-5">
+                  <div class="container">
+                    <div class="row d-flex justify-content-md-center search-box">
+                      <div class="col col-lg-8">
+                        <input type="text" name='search' id="search" class="form-control" placeholder="">
+                      </div>
+                      <div class="col-md-auto">
+                      </div>
+                      <div class="col mt-2">
+                        <button type="submit" class="btn btn-primary btn-block mb-2"><i class="bi bi-search pe-3" aria-hidden="true"></i>
+
+                          BUSCAR
+
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-primary mr-auto"><i class="bi bi-search pe-3" aria-hidden="true"></i> Buscar</button>
-                  </div>
-                </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
     </section><!-- End About Section -->
 
     <!-- ======= Clients Section ======= -->
@@ -42,7 +49,7 @@
             <button type="button" class="btn btn-outline-primary btn-lg ">PROFESIONALES</button>
           </div>
           <div class="col-sm-4 text-center py-3">
-            <button type="button" class="btn btn-outline-primary btn-lg ">INVERSOR</button>
+            <a :href="this.investorRoute" class="btn btn-outline-primary btn-lg ">INVERSOR</a>
           </div>
         </div>
       </div>
@@ -122,4 +129,23 @@
         </div>
   </section><!-- End Features Section -->
 </div>
-@endsection
+</template>
+
+<script>
+export default {
+    setup () {
+        
+
+        return {}
+    },
+    data () {
+      return {
+        investorRoute: "investor"
+      }
+    }
+ }
+</script>
+
+<style lang="scss" scoped>
+
+</style>

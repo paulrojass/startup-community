@@ -1,0 +1,97 @@
+/* search Bar*/
+
+.searchBox {
+  /* justify-content: space-between; */
+  border-radius: 10px;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 6px;
+  height: 56px;
+  width: 60%;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 4px 2px rgba(255, 255, 255, 0.1)
+}
+.searchBox .dropdown {
+  position: relative;
+}
+.searchBox .dropdown .defaultOption {
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  border-right: 2px solid;
+  color: #BD13B8;
+}
+.searchBox .dropdown ul {
+  position: absolute;
+  border-radius: 5px;
+  top: 70px;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+  padding-top: 20px;
+  /*display: none;*/
+}
+.searchBox .dropdown ul.active {
+  display: block;
+}
+.searchBox .dropdown ul li {
+  padding-bottom: 20px;
+  color:#BD13B8;
+  cursor:pointer;
+}
+
+.wrapper .searchBox .searchField {
+  width: 80%;
+  padding: 0 1em;
+  position: relative;
+}
+
+.wrapper .searchBox .searchField input{
+  font-family: 'Nunito';
+  font-style: normal;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color:#BD13B8;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.search-font {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #BD13B8;
+}
+
+/* estilos del dashboard */
+.search-bar .search-link {
+  color:#0071BC
+}
+
+.search-label {
+  color: #BD13B8;
+}
+
+.search-input {
+  border: 1px solid #CDCDCD;
+  padding: 8px;
+}
+
+.btn-circle {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 20px;
+}
