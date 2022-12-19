@@ -16,6 +16,8 @@ Route::get('/', [App\Http\Controllers\LandingController::class, 'index'])
 ->name('landings');
 Route::get('investor', [App\Http\Controllers\LandingController::class, 'investor'])
 ->name('landings.investor');
+Route::get('professional', [App\Http\Controllers\LandingController::class, 'professional'])
+->name('landings.professional');
 
 Route::get('/select-role', [App\Http\Controllers\HomeController::class, 'selectRole'])->name('select-role');
 

@@ -6,14 +6,14 @@
 
 import './bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import '../css/style-landing.css';
-import '../css/style-dashboard.css';
+//import '../css/style-landing.css';
+//import '../css/style-dashboard.css';
 import '../css/custom.css';
 
-// import '../assets/vendor/aos/aos.css';
-// import '../assets/vendor/glightbox/css/glightbox.min.css';
-// import '../assets/vendor/remixicon/remixicon.css';
-// import '../assets/vendor/swiper/swiper-bundle.min.css';
+import '../assets/vendor/aos/aos.css';
+import '../assets/vendor/glightbox/css/glightbox.min.css';
+import '../assets/vendor/remixicon/remixicon.css';
+import '../assets/vendor/swiper/swiper-bundle.min.css';
 
 // import '../assets/vendor/purecounter/purecounter_vanilla';
 // import '../assets/vendor/aos/aos';
@@ -23,11 +23,15 @@ import '../css/custom.css';
 // import '../assets/vendor/swiper/swiper-bundle.min';
 // import '../assets/vendor/php-email-form/validate';
 
-//import aos from 'aos';
+import aos from 'aos';
 //import PureCounter from '@srexi/purecounterjs';
 //import '../assets/js/main';
 
-//aos.init();
+aos.init();
+
+// import VueSlider from 'vue-slider-component'
+// import 'vue-slider-component/theme/default.css'
+
 
 import { createApp } from 'vue';
 
@@ -47,6 +51,7 @@ import { Bootstrap5Pagination } from 'laravel-vue-pagination';
 //Landings
 import HomeComponent from './components/landings/HomeComponent.vue';
 import InvestorComponent from './components/landings/InvestorComponent.vue';
+import ProfessionalComponent from './components/landings/ProfessionalComponent.vue';
 
 app.component('example-component', ExampleComponent);
 app.component('startups-component', StartupsComponent);
@@ -56,6 +61,9 @@ app.component('single-component', SingleComponent);
 app.component('pagination', Bootstrap5Pagination);
 app.component('home-component', HomeComponent);
 app.component('investor-component', InvestorComponent);
+app.component('professional-component', ProfessionalComponent);
+
+//app.component('VueSlider', VueSlider)
 
 /**
  * The following block of code may be used to automatically register your

@@ -17,6 +17,7 @@
         "vue": "^3.2.37"
     },
     "dependencies": {
+        "aos": "^2.3.4",
         "bootstrap-icons": "^1.10.2",
         "laravel-vue-pagination": "^4.0.0",
         "moment": "^2.29.4"

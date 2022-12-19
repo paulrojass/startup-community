@@ -1,50 +1,71 @@
 <template>
     <div>
         <!-- ======= About Section ======= -->
-        <section class="investor-main py-0 me-0">
+        <section class="professional-main py-0 me-0">
           <div class="container-fluid px-0">
           <div class="row position-relative align-items-center">
-            <div class="col-lg-12 d-flex justify-content-end">
-              <img src="img/backgrounds/investor_bg2.png" class="img-fluid" alt="">
+            <div class="col-lg-12  d-flex justify-content-end">
+              <img src="img/backgrounds/professional_bg.png" class="img-fluid " alt="">
             </div>
             <div class="col-lg-12 position-absolute"
-              data-aos="flip-right"
-              data-aos-duration="1200">
+            data-aos="flip-right"
+            data-aos-duration="1200">
+            >
               <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-12 text-center position-absolute">
-              <h1>Forma parte de nuestra<br />tripulación</h1>
-              <h3 class="my-4">Perteneciendo a la comunidad startup como profesional experto,
-                te hace una <br />pieza clave para llegar a otros universos
-              </h3>
-              <div class="container">
-                <div class="row d-flex justify-content-center">
-                  <div class="col-lg-8">
-                    <form action="startups" method="GET">
-                      <div class="search-bar">
-                        <div class="input-group">
-                          <span class="input-group-text icon-input">
-                            <i class="bi bi-sliders"></i>
-                          </span>
-                          <input type="text" class="form-control shadow-none search-input" name="search" placeholder="Filtrar por: Colocar tu búsqueda de Startup aquí">
-                          <button class="btn btn-primary search-button" type="submit">
-                            <i class="bi bi-search"></i> BUSCAR
-                          </button>
+            <div class="col-lg-12 position-absolute text-center pt-5">
+                <h1>Forma parte de nuestra<br />tripulación</h1>
+                <h3 class="my-4">Perteneciendo a la comunidad startup como profesional experto,
+                  te hace una <br />pieza clave para llegar a otros universos
+                </h3>
+                <div class="container">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                      <form action="startups" method="GET">
+                        <div class="search-bar">
+                          <div class="input-group">
+                            <span class="input-group-text icon-input">
+                              <i class="bi bi-sliders"></i>
+                            </span>
+                            <input type="text" class="form-control shadow-none search-input" name="search" placeholder="Filtrar por: Colocar tu búsqueda de Startup aquí">
+                            <button class="btn btn-primary search-button" type="submit">
+                              <i class="bi bi-search"></i> BUSCAR
+                            </button>
+                          </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
-              </div> 
             </div>
           </div>
         </div>
         </section><!-- End About Section -->
     
         <!-- ======= Clients Section ======= -->
-        <section class="frame-blue py-3">
+        <section class="frame-blue pt-5">
           <div class="container text-center" data-aos="fade-up">
-            <h1>¿Cómo invertir en StartUps?</h1>
+            <div class="row">
+              <div class="col-lg-6 img-person d-none d-lg-block">
+                <img src="img/professional/person.png" alt="">
+              </div>
+              <div class="col-lg-6 text-center pb-5">
+                <h2>Mejora tu perfil</h2>
+                <h4>Ingresa tu información profesional detallada; Tu perfil puede ser de interés para otros profesionales, Startup o Inversores.
+                </h4>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="img/professional/item-1.png" alt="">
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="img/professional/item-2.png" alt="">
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="img/professional/item-3.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section><!-- End Clients Section -->
     
@@ -52,48 +73,43 @@
         <section class="pt-3">
           <div class="container">
             <div class="row pb-4 ">
+              <h2 class="text-center mb-5">¿Qué entendemos como Startup?</h2>
               <div class="col-lg-2 d-flex justify-content-center">
-                <img src="img/investor/col-1.png" class="img-fluid" alt="">
+                <img src="img/professional/col-1.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 p-4">
                 <h4 class="text-justify">
-                  Una de las preguntas que todo inversionista tiene al momento de entrar es este universo innovador. La respuesta no es una sola, sino una cantidad de variables que definen si el resultado de la inversión será satisfactorio.
+                  Llamamos profesionales expertos a las personas que posee conocimiento y dominio de un área en específico. Ya sea la parte tecnológica, administrativa, Marketing, o cualquier otra tarea que se necesite desarrollar en una StartUp.
                 </h4>
               </div>
             </div>
             <div class="row pb-4">
               <div class="col-lg-10 p-4">
                 <h4 class="text-justify">
-                  Las StartUp por lo general están en una fase muy joven, por lo que el riesgo de inversión es alto, las propuestas y modo de gestión del proyecto, definirán el éxito, conociendo esas 2 virtudes, el riesgo sigue siendo el mismo, pero la probabilidad de éxito se eleva
+                  Pertenecer a la tripulación de StartUp Community como profesional experto, genera un aumento en el rendimiento de dicho proyecto y acelera los objetivos planteados. Con buenos tripulantes, el viaje toma la ruta adecuada.
                 </h4>
               </div>
               <div class="col-lg-2 d-flex justify-content-center">
-                <img src="img/investor/col-2.png" class="img-fluid" alt="">
+                <img src="img/professional/col-2.png" class="img-fluid" alt="">
               </div>
             </div>
             <div class="row pb-4">
               <div class="col-lg-2 d-flex justify-content-center">
-                <img src="img/investor/col-3.png" class="img-fluid" alt="">
+                <img src="img/professional/col-3.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 p-4">
                 <h4  class="text-justify">
-                  Las StartUps son un cohete destinado a viajar más allá de lo que hoy conocemos y los inversionistas son el combustible que necesita para lograrlo.
-                </h4>
+                  El éxito de la innovación va de la mano de grandes mentes, el conocimiento es poder para nosotros. El viaje hacia otros universos es largo, pero con buenos guías en nuestra tripulación, el punto de llegada lo tenemos asegurado.                </h4>
               </div>
             </div>
           </div>
         </section><!-- End Features Section -->
 
-        <section class="frame-blue py-3">
-          <div class="container">
-            <h2>StartUps en desarrollo</h2>
-          </div>
-        </section>
-        <!-- End Clients Section -->
-
+        
         <!-- ======= Features Section ======= -->
         <section data-aos="fade-up" class="bg-moon">
           <div class="container">
+            <div class="d-lines"></div>
             <div class="text-center"> 
               <h2>Conoce los últimos StartUps</h2>
               <h4>Adéntrate en la comunidad StartUp y conoce a detalles los pioneros de grandes ideas</h4>  
@@ -149,7 +165,7 @@
                 <div class=" col-12 d-flex justify-content-center ">
                   <button class="btn btn-primary btn-lg"
                     data-bs-toggle="modal" data-bs-target="#modal-investor"
-                    >¡QUIERO INVERTIR!
+                    >¡QUIERO TRABAJAR!
                   </button>
                 </div>
               </div>

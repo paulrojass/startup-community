@@ -31,4 +31,18 @@ class LandingController extends Controller
         //}
         //return redirect()->route('select-role');
     }
+
+    /**
+     * Show the professional view.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function professional()
+    {
+        //if (auth()->user()->hasRole(Role::all())) {
+            return view('landings.professional');
+        //}
+        //return redirect()->route('select-role');
+    }
+
 }

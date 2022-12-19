@@ -17,57 +17,51 @@
   <!-- Scripts -->
   <!-- Landing CSS Files -->
   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-  <link href="landing/vendor/aos/aos.css" rel="stylesheet">
+  <!-- <link href="landing/vendor/aos/aos.css" rel="stylesheet">
   <link href="landing/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="landing/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="landing/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="landing/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
   <!-- <link href="landing/css/style.css" rel="stylesheet"> -->
 </head>
 
-<body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+<body class="HomeGeneral01">
+  <div class="Cabezal_PrincipalDefault">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="/img/logos/color.png" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item text-center">
+            @if (\Route::current()->getName() != 'landings')
+              <a class="nav-link active" aria-current="page" href="/">
+                <i class="bi bi-arrow-left me-2"></i>
+                Volver a home
+              </a>
+            @endif
+            </li>
+          </ul>
+          <div class="text-center">
+            @if (\Route::current()->getName() == 'landings.investor')
+            <button class="btn btn-primary btn-lg" type="submit">¡QUIERO INVERTIR!</button>
+            @endif
+            @if (\Route::current()->getName() == 'landings.professional')
+            <button class="btn btn-primary btn-lg" type="submit">¡QUIERO TRABAJAR!</button>
+            @endif
+          </div>
+        </div>
+      </div>
+    </nav>
 
-      <a href="/" class="logo d-flex align-items-center">
-        <img src="img/logo_white.png" alt="">
-      </a>
-
-      <nav id="navbar" class="navbar">
-        {{--  
-        <ul class="ms-auto">
-          <li><a class="nav-link scrollto active" href="javascript:void(0)">home</a></li>
-          <li><a href="#">Startup</a></li>
-          <li><a href="#">Profesionales</a></li>
-          <li><a href="{{route('landings.investor')}}">Inversores</a></li>
-        </ul>
-        @if (Route::has('login'))
-                @auth
-                <a class="dropdown-item" href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                </a>
-                @else
-                    <li><a href="#">Iniciar sesión</a></li>
-                    @if (Route::has('register'))
-                      
-                        
-
-                    <a class="btn btn-primary btn-lg" href="{{route('login')}}">Crear Cuenta</a>
-                    @endif
-                @endauth
-        @endif--}}
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+    
+  </div>
 
   <div id="app">
-      <main id="main">
-          @yield('content')
-      </main>
+    @yield('content')
   </div>
 
   <!-- ======= Footer ======= -->
@@ -133,17 +127,17 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
 
   <!-- Vendor JS Files -->
 
-  <script src="landing/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!-- <script src="landing/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="landing/vendor/aos/aos.js"></script>
   <script src="landing/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="landing/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="landing/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="landing/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="landing/vendor/php-email-form/validate.js"></script>
+  <script src="landing/vendor/php-email-form/validate.js"></script> -->
 
   <!-- <script src="landing/vendor/search/js/extention/choices.js"></script>
   <script>
@@ -154,7 +148,7 @@
 
   </script> -->
   <!-- Template Main JS File-->
-  <script src="landing/js/main.js"></script>
+  <!-- <script src="landing/js/main.js"></script> -->
 </body>
 
 <!-- Vertically centered modal -->
