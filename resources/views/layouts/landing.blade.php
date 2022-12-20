@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             {{-- 
-            <li class="nav-item text-center">
+            <li class="nav-item">
             @if (\Route::current()->getName() != 'landings')
               <a class="nav-link active" aria-current="page" href="/">
                 <i class="bi bi-arrow-left me-2"></i>
@@ -46,6 +46,22 @@
             @endif
             </li>
             --}}
+            <li>
+              <a class="nav-link" aria-current="page" href="startups">
+                Startups
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" aria-current="page" href="professional">
+                Profesionales
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" aria-current="page" href="investor">
+                Inversores
+              </a>
+            </li>
+            </li>
           </ul>
           <div class="text-center">
             <button class="btn btn-primary btn-lg" type="button"
