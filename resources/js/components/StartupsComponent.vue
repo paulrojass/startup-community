@@ -1,25 +1,30 @@
 <template>
-    <div class="container search-bar">
+    <div class="container">
         <div class="row mt-5 justify-content-center  mh-25">
             <div class="col-md-12">
-                <div class="card">
+                <div class="card card-border-none">
                     <div class="card-body p-2">
                         <div class="row">
-                            <div class="col-md-2 my-auto">
+                            <div class="col-md-2 my-3 d-flex justify-content-center">
                                 <a class="search-link" href="/"><i class="bi bi-arrow-left px-2"></i>Volver al home</a>
                             </div>
                             <div class="col-md-6">
-                                <div class="wrapper d-flex justify-content-center">
-                                    <div class="searchBox search-input d-block w-75 d-flex justify-content-between" >
-                                        <div class="search-label">
-                                            <i class="bi bi-sliders pe-3" aria-hidden="true"></i>Filtrar por:
+                                <div class="d-flex justify-content-center">
+                                    <div class="searchBox search-input d-block d-flex justify-content-between" >
+                                        <div class="search-bar search-bar-border">
+                                            <div class="input-group">
+                                                <span class="input-group-text icon-input">
+                                                    <i class="bi bi-sliders me-3"></i>
+                                                    Filtrar por:
+                                                </span>
+                                                <input type="text" class="form-control shadow-none search-input" name="search" id="search"
+                                                v-model="inputSearch" v-on:keyup.enter="getResults(1)">
+                                                <button class="btn btn-primary rounded-circle" type="submit" 
+                                                @click="getResults(1)">
+                                                    <i class="bi bi-search"></i>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="searchField w-50">
-                                            <input type="text" name="search" id="search" class="input" style="color:#444444" placeholder="" v-model="inputSearch" v-on:keyup.enter="getResults(1)">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary btn-circle" @click="getResults(1)">
-                                            <i class="bi bi-search" aria-hidden="true"></i>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -34,7 +39,7 @@
 
         <div class="row my-5 justify-content-center h-75">
             <div class="col-md-12">
-                <div class="card">
+                <div class="card card-border-none">
                     <div class="card-body">
                         <div class="row g-0">
                             <div class="col-md-6 overflow-auto" style="max-height:500px">

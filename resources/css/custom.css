@@ -34,7 +34,9 @@
     /* display: flex;
     flex-direction: row;
     gap: 55px;
-    justify-content: center; */
+    justify.content {
+      min-height: 100hv;
+    }: center; */
     align-items: center;
     
     padding: 0;
@@ -187,6 +189,10 @@ p {
     background: white;
     padding: 0.3rem;
     border-radius: 10px;
+}
+
+.search-bar-border {
+  border: 1px solid #cdcdcd;
 }
 
 .search-bar .icon-input {
@@ -531,3 +537,132 @@ p {
     font-size: 13px;
     color: #fff;
   }
+
+
+  /* dashboard*/
+
+
+
+/* #sidebar-wrapper {
+  background: #80B8DE !important;
+}
+#sidebar-wrapper .sidebar-heading {
+  height: 5rem;
+  background: #0E5394 !important;
+}
+
+#sidebar-wrapper .list-group {
+width: 5rem;
+} */
+
+.body-dashboard {
+  background: #f5f5f5;
+}
+
+#side_nav {
+  background:  #80B8DE;
+  min-width: 88px;
+  max-width: 88px;
+}
+
+.header-box {
+  background:  #0E5394;
+  height: 88px;
+}
+
+.sidebar-body {
+  background: #80B8DE !important;
+}
+
+.content {
+  height: 100vh !important;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #side_nav {
+    display: none;
+  }
+
+  .card-information {
+    display: none;
+  }
+}
+
+/* 
+dashborad content
+*/
+
+.card-overlay:hover {
+  background-color: #0071BC;
+  color:#fff !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-overlay:hover h4 {
+  color:#fff !important;
+}
+.card-overlay:hover .single-card-logo {
+  border: 5px solid #fff;
+}
+.card-overlay:hover .single-type-logo {
+  display: none;
+}
+.card-overlay:hover .single-type-logo-white {
+  display: block;
+}
+
+
+.card-border-none {
+  border: none !important;
+}
+
+.card-radius-none {
+  border-radius: 0px;
+}
+
+.single-card-logo {
+  border: 5px solid #80B8DE;
+  width: 100%;
+  max-width: 160px;
+}
+
+.single-type-logo {
+  width: 100%;
+  max-width: 48px;
+}
+
+.single-type-logo-white {
+  width: 100%;
+  max-width: 48px;
+  display: none;
+}
+
+
+
+
+
+.single-card {
+  height: 176px;
+  border-radius: 0px !important;
+}
+
+
+
+
+.single-card-logo-inf {
+  min-width: 90%;
+  border: 1px solid #80B8DE;
+}
+
+
+
+.sidebar-divider {
+  border-top: 2px solid #0071BC;
+  max-width: 100%;
+}
+
+.dark-text {
+  color:#0071BC;
+}
