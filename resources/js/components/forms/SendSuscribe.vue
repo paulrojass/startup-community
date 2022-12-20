@@ -12,21 +12,24 @@
                         </div>
                         <div class="mb-3">
                             <label for="name" class="form-label">Nombres y apellidos</label>
-                            <input type="name" class="form-control" id="name" name="name" v-model="form.name">
+                            <input type="name" class="form-control" id="name" name="name" v-model="form.name" v-on:input="verifyFields">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" v-model="form.email">
+                            <input type="email" class="form-control" id="email" name="email" v-model="form.email" v-on:input="verifyFields">
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Mensaje</label>
-                            <textarea class="form-control" name="message" id="message" v-model="form.message" rows="6" required></textarea>
+                            <textarea class="form-control" name="message" id="message" v-model="form.message" rows="6" required v-on:input="verifyFields"></textarea>
                         </div>
                         <div class="mb-3 d-flex justify-content-center">
                             <button type="button" class="btn btn-primary btn-lg btn-block" @click="submit()">ENVIAR</button>
                         </div>
+                        <div class="text-center" v-if="show_msg_fields">
+                            <p class="dark-text">Debe llenar todos los campos</p>
+                        </div>
                         <div class="text-center" v-if="show_msg">
-                            <h6 class="dark-text">¡Suscripción recibida! por favor revise su buzón de correos</h6>
+                            <p class="dark-text">¡Suscripción recibida! por favor revise su buzón de correos</p>
                         </div>
                     </form>
                 </div>
@@ -47,22 +50,31 @@ export default {
                 message: ''
             },
             show_msg: false,
+            show_msg_fields: false,
             hide:false
         }
     },
     methods: {
         async submit(){
-            await axios.post('api/subscribe',this.form).then(response=>{
-                this.show_msg = true;
-            }).catch(error=>{
-                console.log(error)
-            })
+            if(this.form.name == '' || this.form.email == '' || this.form.message == '') {
+                this.show_msg_fields = true
+            } else {
+                await axios.post('api/subscribe',this.form).then(response=>{
+                    this.show_msg = true;
+                }).catch(error=>{
+                    console.log(error)
+                })
+            }
         },
         clear() {
             this.form.name = ''
             this.form.email = ''
             this.form.message = ''
             this.show_msg = false
+            this.show_msg_fields = false
+        },
+        verifyFields() {
+            this.show_msg_fields = false
         },
         doSomethingOnHidden(){
             console.log('hello')
