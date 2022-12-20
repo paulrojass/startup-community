@@ -17,7 +17,7 @@
           </div>
           <div class="col-lg-12 text-center position-absolute">
             <h1>Bienvenido a un Universo <br />de Alto Valor</h1>
-            <h4>La comunidad que conecta Startups, Profesionales e Inversión</h4>
+            <h4 class="py-4">La comunidad que conecta Startups, Profesionales e Inversión</h4>
             <div class="container">
               <search-component></search-component>
             </div>        

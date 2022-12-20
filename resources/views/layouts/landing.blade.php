@@ -48,20 +48,21 @@
             --}}
           </ul>
           <div class="text-center">
-            @if (\Route::current()->getName() == 'landings.investor')
             <button class="btn btn-primary btn-lg" type="button"
             data-bs-toggle="modal" data-bs-target="#modal-investor"
-            >¡QUIERO INVERTIR!</button>
+            >
+            @if (\Route::current()->getName() == 'landings')
+            ¡QUIERO UNIRME!
+            @elseif (\Route::current()->getName() == 'landings.investor')
+            ¡QUIERO INVERTIR!
+            @else
+            ¡QUIERO TRABAJAR!
             @endif
-            @if (\Route::current()->getName() == 'landings.professional')
-            <button class="btn btn-primary btn-lg" type="submit">¡QUIERO TRABAJAR!</button>
-            @endif
+          </button>
           </div>
         </div>
       </div>
     </nav>
-
-    
   </div>
 
   <div class="">

@@ -15,9 +15,9 @@
             </div>
             <div class="col-lg-12 position-absolute text-center">
                 <h1>Forma parte de nuestra<br />tripulación</h1>
-                <h3 class="my-4">Perteneciendo a la comunidad startup como profesional experto,
+                <h4 class="py-4">Perteneciendo a la comunidad startup como profesional experto,
                   te hace una <br />pieza clave para llegar a otros universos
-                </h3>
+                </h4>
                 <div class="container">
                   <search-component></search-component>
                 </div>
