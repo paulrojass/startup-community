@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- ======= About Section ======= -->
-        <section class="investor-main py-0 me-0">
+        <section class="investor-main py-auto me-0">
           <div class="container-fluid px-0">
           <div class="row align-items-center position-relative">
             <div class="col-lg-12 d-flex justify-content-end">
@@ -13,28 +13,12 @@
               <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="">
             </div>
             <div class="col-lg-12 text-center position-absolute">
-              <h1>Forma parte de nuestra<br />tripulación</h1>
-              <h3 class="my-4">Perteneciendo a la comunidad startup como profesional experto,
+              <h1 class="">Forma parte de nuestra<br />tripulación</h1>
+              <h4 class="py-4">Perteneciendo a la comunidad startup como profesional experto,
                 te hace una <br />pieza clave para llegar a otros universos
-              </h3>
+              </h4>
               <div class="container">
-                <div class="row d-flex justify-content-center">
-                  <div class="col-lg-8">
-                    <form action="startups" method="GET">
-                      <div class="search-bar">
-                        <div class="input-group">
-                          <span class="input-group-text icon-input">
-                            <i class="bi bi-sliders"></i>
-                          </span>
-                          <input type="text" class="form-control shadow-none search-input" name="search" placeholder="Filtrar por: Colocar tu búsqueda de Startup aquí">
-                          <button class="btn btn-primary search-button" type="submit">
-                            <i class="bi bi-search"></i> BUSCAR
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+                <search-component></search-component>
               </div> 
             </div>
           </div>
@@ -49,21 +33,21 @@
         </section><!-- End Clients Section -->
     
         <!-- ======= Features Section ======= -->
-        <section class="pt-3">
+        <section class="py-3">
           <div class="container">
-            <div class="row pb-4 ">
+            <div class="row pb-4 align-items-center">
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/investor/col-1.png" class="img-fluid" alt="">
               </div>
-              <div class="col-lg-10 p-4">
-                <h4 class="text-justify">
+              <div class="col-lg-10">
+                <h4>
                   Una de las preguntas que todo inversionista tiene al momento de entrar es este universo innovador. La respuesta no es una sola, sino una cantidad de variables que definen si el resultado de la inversión será satisfactorio.
                 </h4>
               </div>
             </div>
-            <div class="row pb-4">
+            <div class="row pb-4 align-items-center">
               <div class="col-lg-10 p-4">
-                <h4 class="text-justify">
+                <h4>
                   Las StartUp por lo general están en una fase muy joven, por lo que el riesgo de inversión es alto, las propuestas y modo de gestión del proyecto, definirán el éxito, conociendo esas 2 virtudes, el riesgo sigue siendo el mismo, pero la probabilidad de éxito se eleva
                 </h4>
               </div>
@@ -71,12 +55,12 @@
                 <img src="img/investor/col-2.png" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="row pb-4">
+            <div class="row pb-4 align-items-center">
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/investor/col-3.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 p-4">
-                <h4  class="text-justify">
+                <h4>
                   Las StartUps son un cohete destinado a viajar más allá de lo que hoy conocemos y los inversionistas son el combustible que necesita para lograrlo.
                 </h4>
               </div>

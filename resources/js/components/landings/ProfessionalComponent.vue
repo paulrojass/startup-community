@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- ======= About Section ======= -->
-        <section class="professional-main py-0 me-0">
+        <section class="professional-main py-auto me-0">
           <div class="container-fluid px-0">
           <div class="row position-relative align-items-center">
             <div class="col-lg-12  d-flex justify-content-end">
@@ -13,29 +13,13 @@
             >
               <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-12 position-absolute text-center pt-5">
+            <div class="col-lg-12 position-absolute text-center">
                 <h1>Forma parte de nuestra<br />tripulación</h1>
                 <h3 class="my-4">Perteneciendo a la comunidad startup como profesional experto,
                   te hace una <br />pieza clave para llegar a otros universos
                 </h3>
                 <div class="container">
-                  <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                      <form action="startups" method="GET">
-                        <div class="search-bar">
-                          <div class="input-group">
-                            <span class="input-group-text icon-input">
-                              <i class="bi bi-sliders"></i>
-                            </span>
-                            <input type="text" class="form-control shadow-none search-input" name="search" placeholder="Filtrar por: Colocar tu búsqueda de Startup aquí">
-                            <button class="btn btn-primary search-button" type="submit">
-                              <i class="bi bi-search"></i> BUSCAR
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                  <search-component></search-component>
                 </div>
             </div>
           </div>
@@ -72,20 +56,20 @@
         <!-- ======= Features Section ======= -->
         <section class="pt-3">
           <div class="container">
-            <div class="row pb-4 ">
+            <div class="row pb-4  align-items-center">
               <h2 class="text-center mb-5">¿Qué entendemos como Startup?</h2>
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/professional/col-1.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 p-4">
-                <h4 class="text-justify">
+                <h4>
                   Llamamos profesionales expertos a las personas que posee conocimiento y dominio de un área en específico. Ya sea la parte tecnológica, administrativa, Marketing, o cualquier otra tarea que se necesite desarrollar en una StartUp.
                 </h4>
               </div>
             </div>
-            <div class="row pb-4">
+            <div class="row pb-4 align-items-center">
               <div class="col-lg-10 p-4">
-                <h4 class="text-justify">
+                <h4>
                   Pertenecer a la tripulación de StartUp Community como profesional experto, genera un aumento en el rendimiento de dicho proyecto y acelera los objetivos planteados. Con buenos tripulantes, el viaje toma la ruta adecuada.
                 </h4>
               </div>
@@ -93,12 +77,12 @@
                 <img src="img/professional/col-2.png" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="row pb-4">
+            <div class="row pb-4 align-items-center">
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/professional/col-3.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 p-4">
-                <h4  class="text-justify">
+                <h4>
                   El éxito de la innovación va de la mano de grandes mentes, el conocimiento es poder para nosotros. El viaje hacia otros universos es largo, pero con buenos guías en nuestra tripulación, el punto de llegada lo tenemos asegurado.                </h4>
               </div>
             </div>

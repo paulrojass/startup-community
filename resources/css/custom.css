@@ -6,12 +6,14 @@
     /*margin: 0 0 51.6px;
     z-index: 997;
     padding: 16px 72px 11px; */
+    background: #fff !important;
     transition: all 0.5s;
     padding-top: 0;
 }
 
 .Cabezal_PrincipalDefault nav {
-    background: rgba(0, 0, 0, 0);
+    /* background: rgba(0, 0, 0, 0); */
+    background: #fff;
 }
 
 .home-main {
@@ -73,6 +75,12 @@ h1 {
     font-weight: 900;
     font-size: 61px;
     line-height: 65px;
+    align-self: stretch;
+    flex-grow: 0;
+    font-stretch: normal;
+    line-height: 1.07;
+    letter-spacing: normal;
+    color: #fff;
 }
 
 h2 {
@@ -141,7 +149,8 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF !important;
+    /* color: #FFFFFF !important; */
+    color: #0071BC !important;
 }
 
 .btn-primary {
@@ -278,19 +287,19 @@ p {
 }
 
 .bg-moon {
-  background: url(img/backgrounds/moon.png) no-repeat center bottom;
+  background: url(/img/backgrounds/moon.png) no-repeat center bottom;
 }
 
 .bg-moon-astro {
-  background: url(img/backgrounds/home_moon_astro.png) no-repeat center bottom;
+  background: url(/img/backgrounds/home_moon_astro.png) no-repeat center bottom;
 }
 
 .bg-planet-space {
-  background: url(img/backgrounds/home_planet_space.png) no-repeat center top;
+  background: url(/img/backgrounds/home_planet_space.png) no-repeat center top;
 }
 
 .bg-moon-planet {
-  background: url(img/backgrounds/home_moon_planet_space.png) no-repeat center bottom;
+  background: url(/img/backgrounds/home_moon_planet_space.png) no-repeat center bottom;
 }
 
 .img-person {

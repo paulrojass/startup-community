@@ -7,7 +7,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{ config('app.name', 'Startup Community') }}</title> 
+  <title>Startup Community</title> 
 
   <!-- Favicons -->
   <link href="favicon.ico" rel="icon">
@@ -36,6 +36,7 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            {{-- 
             <li class="nav-item text-center">
             @if (\Route::current()->getName() != 'landings')
               <a class="nav-link active" aria-current="page" href="/">
@@ -44,6 +45,7 @@
               </a>
             @endif
             </li>
+            --}}
           </ul>
           <div class="text-center">
             @if (\Route::current()->getName() == 'landings.investor')
