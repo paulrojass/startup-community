@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\StartupController;
-
+use App\Http\Controllers\SubscriberController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::resource('startups', StartupController::class);
+
+Route::post('subscribe', [SubscriberController::class, 'subscribe']);

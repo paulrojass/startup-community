@@ -24,7 +24,7 @@
   <!-- <link href="landing/css/style.css" rel="stylesheet"> -->
 </head>
 
-<body class="HomeGeneral01">
+<body class="HomeGeneral01" id="app">
   <div class="Cabezal_PrincipalDefault">
     <nav class="navbar navbar-expand-lg bg-transparent">
       <div class="container">
@@ -47,7 +47,9 @@
           </ul>
           <div class="text-center">
             @if (\Route::current()->getName() == 'landings.investor')
-            <button class="btn btn-primary btn-lg" type="submit">¡QUIERO INVERTIR!</button>
+            <button class="btn btn-primary btn-lg" type="button"
+            data-bs-toggle="modal" data-bs-target="#modal-investor"
+            >¡QUIERO INVERTIR!</button>
             @endif
             @if (\Route::current()->getName() == 'landings.professional')
             <button class="btn btn-primary btn-lg" type="submit">¡QUIERO TRABAJAR!</button>
@@ -60,7 +62,7 @@
     
   </div>
 
-  <div id="app">
+  <div class="">
     @yield('content')
   </div>
 
@@ -149,39 +151,8 @@
   </script> -->
   <!-- Template Main JS File-->
   <!-- <script src="landing/js/main.js"></script> -->
+  @yield('modals')
 </body>
 
 <!-- Vertically centered modal -->
-<div class="modal" id="modal-investor" tabindex="-1" aria-labelledby="modal-investor-Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body">
-          
-        <form method="post" class="php-email-form">
-            <div class="mb-3">
-              <h3 class="title">Conecta con Startup Community</h3>
-            </div>
-            <div class="mb-3">
-              <label for="name" class="form-label">Nombres y apellidos</label>
-              <input type="name" class="form-control" id="name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Mensaje</label>
-              <textarea class="form-control" name="message" rows="6" required></textarea>
-            </div>
-            <div class="mb-3 mx-5">
-              <button type="submit" class="btn btn-primary btn-block">ENVIAR</button>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 </html>

@@ -3,7 +3,7 @@
         <!-- ======= About Section ======= -->
         <section class="investor-main py-0 me-0">
           <div class="container-fluid px-0">
-          <div class="row position-relative align-items-center">
+          <div class="row align-items-center position-relative">
             <div class="col-lg-12 d-flex justify-content-end">
               <img src="img/backgrounds/investor_bg2.png" class="img-fluid" alt="">
             </div>
@@ -84,11 +84,11 @@
           </div>
         </section><!-- End Features Section -->
 
-        <section class="frame-blue py-3">
+        <!-- <section class="frame-blue py-3">
           <div class="container">
             <h2>StartUps en desarrollo</h2>
           </div>
-        </section>
+        </section> -->
         <!-- End Clients Section -->
 
         <!-- ======= Features Section ======= -->

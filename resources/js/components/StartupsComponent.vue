@@ -52,7 +52,7 @@
                                     </single-component>
                                 </div>
                                 <div v-else>
-                                    <h4>No hay resultados en la busqueda</h4>
+                                    <h4 class="dark-text">No hay resultados en la busqueda</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 overflow-auto pt-2" v-if="startup" style="max-height:500px">

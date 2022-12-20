@@ -43,16 +43,16 @@
     <!-- End About Section -->
 
     <!-- ======= section buttons ======= -->
-    <section class="frame-blue" data-aos="zoom-out" data-aos-duration="1000">
+    <section class="frame-blue">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 text-center p-4">
-            <button type="button" class="btn btn-outline-primary btn-lg btn-full">STARTUP O PROYECTOS</button>
+          <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
+            <a :href="this.startupRoute" class="btn btn-outline-primary btn-lg btn-full">STARTUP O PROYECTOS</a>
           </div>
-          <div class="col-sm-4 text-center p-4">
+          <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
             <a :href="this.professionalRoute" class="btn btn-outline-primary btn-lg btn-full">PROFESIONALES</a>
           </div>
-          <div class="col-sm-4 text-center p-4">
+          <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
             <a :href="this.investorRoute" class="btn btn-outline-primary btn-lg btn-full">INVERSOR</a>
           </div>
         </div>
@@ -157,13 +157,13 @@
           <div class="col-12">
             <div class="row py-3 ">
               <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-                <button class="btn btn-outline-primary mb-2" style="width:200px">Startup</button>
+                <a :href="this.startupRoute" class="btn btn-outline-primary mb-2" style="width:200px">Startup</a>
               </div>
               <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-                <button class="btn btn-outline-primary mb-2" style="width:200px">Profesional</button>
+                <a :href="this.professionalRoute" class="btn btn-outline-primary mb-2" style="width:200px">Profesional</a>
               </div>
               <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-                <button class="btn btn-outline-primary mb-2" style="width:200px">Inversor</button>
+                <a :href="this.investorRoute" class="btn btn-outline-primary mb-2" style="width:200px">Inversor</a>
               </div>
             </div>
           </div>
@@ -196,6 +196,7 @@ export default {
     },
     data () {
       return {
+        startupRoute: "startups",
         investorRoute: "investor",
         professionalRoute: "professional"
       }
