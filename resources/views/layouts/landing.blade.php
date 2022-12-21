@@ -35,7 +35,7 @@
           <img src="/img/logos/color.png" alt="">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-3">
             {{-- 
             <li class="nav-item">
             @if (\Route::current()->getName() != 'landings')

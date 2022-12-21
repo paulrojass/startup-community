@@ -1,33 +1,42 @@
 <template>
   <div>
     <!-- ======= About Section ======= -->
-    <section class="home-main align-items-center">
+    <section class="home-main align-items-center ">
+      <div class="container-fluid">
         <div class="row mx-auto position-relative">
           <div class="col-lg-12">
-            <img src="img/astro_bg_home.png" class="img-fluid"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-duration="5000"
-            data-aos-offset="0" 
-            >
+            <img src="img/astro_bg_home.png" class="img-fluid" data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-duration="5000" data-aos-offset="0">
           </div>
-          <div class="col-lg-12 d-flex justify-content-center position-absolute" 
-          data-aos="zoom-out" data-aos-duration="3000">
+          <div class="col-lg-12 d-flex justify-content-center position-absolute"
+          data-aos="zoom-out"
+            data-aos-duration="3000">
             <img src="img/astro_rocket_home.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-12 text-center position-absolute">
             <h1>Bienvenido a un Universo <br />de Alto Valor</h1>
-            <h4 class="py-4">La comunidad que conecta Startups, Profesionales e Inversión</h4>
-            <div class="container">
+            <h4>
+              La comunidad que conecta Startups, Profesionales e Inversión
+            </h4>
+            <h5>
+              Nuestra misión consiste en aportar la conexión para que puedas desarrollar<br />
+              proyectos únicos que te permitan alcanzar nuevos universos.
+            </h5>
+            <div class="container  py-4">
+              <h2>
+                ¡Somos la Comunidad StartUp!
+              </h2>
               <search-component></search-component>
-            </div>        
+            </div>
           </div>
         </div>
-    </section>
+      </div>
+      </section>
     <!-- End About Section -->
 
-    <!-- ======= section buttons ======= -->
-    <section class="frame-blue">
+    <!-- ======= section buttons DEPRECATED ======= -->
+    <!-- <section class="frame-blue">
       <div class="container">
         <div class="row">
           <div class="col-sm-4 text-center p-4"  data-aos="zoom-out" data-aos-duration="1000">
@@ -42,11 +51,17 @@
         </div>
       </div>
       
-    </section>
+    </section> -->
     <!-- End section buttons -->
+    
+    <div class="container">
+    <div class="row px-5">
+        <div class="d-lines"></div>
+      </div>
+    </div>
 
     <!-- ======= Features Section ======= -->
-    <section class="home-message bg-moon-planet  pb-5">
+    <section class="bg-planet-space">
 
       <div class="container">
         <div class="row">
@@ -54,22 +69,24 @@
             <img src="img/backgrounds/home_feat.png" class="img-fluid">
           </div> -->
           <div class="col-12">
-            <div class="mt-5 mx-5">
-              <div class="d-lines"></div>
+            <div class="mx-5">
+              <!-- <div class="d-lines"></div>
               <div class="text-center" data-aos="fade-zoom-in">
                 <h2>¡Somos la Comunidad Startup!</h2>
                 <h4>Formada por emprendedores, profesionales e inversores, que buscan cambiar el mundo.</h4>
                 <h4>Nuestra misión consiste en aportar las herramientas y recursos para que puedas desarrollar <br/>proyectos únicos que te permitan alcanzar nuevos universos. </h4>
-              </div>
-              <div class="d-lines"></div>
+              </div> -->
+
               <div class="text-center" data-aos="fade-zoom-in">
                 <h2>¡Prepárate para despegar!</h2>
                 <h4>Conoce los beneficios dentro de StartUp Community</h4>
               </div>
             </div>
-            
-            <div class="container">
-
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12">
             <div class="row" data-aos="zoom-in" data-aos-duration="1000">
               <div class="col-lg-2 col-sm-4 col-xs-6">
                 <div class="home-f-icon text-center">
@@ -126,48 +143,39 @@
                 </div>
               </div>
             </div>
-
-          </div>
-
           </div>
         </div>
       </div>
+    </section>
+    <!-- End Features Section -->
 
-      <div class="container pt-5 align-center">
-        <div class="row">
-          <!-- <div class="col-12 px-0">
-            <img src="img/backgrounds/home_moon.png" class="img-fluid">
-          </div> -->
-          <div class="col-12">
-            <div class="row py-3 ">
-              <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-                <a :href="this.startupRoute" class="btn btn-outline-primary mb-2" style="width:200px">Startup</a>
-              </div>
-              <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-                <a :href="this.professionalRoute" class="btn btn-outline-primary mb-2" style="width:200px">Profesional</a>
-              </div>
-              <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-                <a :href="this.investorRoute" class="btn btn-outline-primary mb-2" style="width:200px">Inversor</a>
-              </div>
-            </div>
+    <section>
+      <div class="container-fluid bg-moon-astro">
+        <div class="row align-items-start" style="height: 25%">
+          <div class="col-12 text-center">
+            <h2 class="text-strong">Conoce nuestros tres universos</h2>
           </div>
-
-          <!-- <div class="container-fluid d-flex position-absolute">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 text-center">
-                  <h3>¿Estas preparado para <br/>el despegue?</h3>
-                  <button class="btn btn-primary btn-lg btn-block">Crear Cuenta</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
+        </div>
+        <div class="row align-items-lg-end align-items-sm-start" style="height: 40%">
+          <div class="col-lg-4 col-xs-12 text-center">
+            <a :href="this.startupRoute"      class="btn btn-outline-primary" style="min-width:200px">Startup</a>
+          </div>
+          <div class="col-lg-4 col-xs-12 text-center">
+            <a :href="this.professionalRoute" class="btn btn-outline-primary" style="min-width:200px">Profesional</a>
+          </div>
+          <div class="col-lg-4 col-xs-12 text-center">
+            <a :href="this.investorRoute"     class="btn btn-outline-primary" style="min-width:200px">Inversor</a>
+          </div>
+        </div>
+        <div class="row align-items-end pb-4" style="height: 35%">
+          <div class="col-12 text-center">
+            <button class="btn btn-primary btn-lg">Crear Cuenta</button>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- End Features Section -->
+
   </div>
 </template>
 

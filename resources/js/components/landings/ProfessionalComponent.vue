@@ -14,7 +14,9 @@
               <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="">
             </div>
             <div class="col-lg-12 position-absolute text-center">
-                <h1>Forma parte de nuestra<br />tripulación</h1>
+                <h1>
+                  Podrás formar parte de la<br />
+                  tripulación que desees</h1>
                 <h4 class="py-4">Perteneciendo a la comunidad startup como profesional experto,
                   te hace una <br />pieza clave para llegar a otros universos
                 </h4>
@@ -34,8 +36,9 @@
                 <img src="img/professional/person.png" alt="">
               </div>
               <div class="col-lg-6 text-center pb-5">
-                <h2>Mejora tu perfil</h2>
-                <h4>Ingresa tu información profesional detallada; Tu perfil puede ser de interés para otros profesionales, Startup o Inversores.
+                <h2>Da a conocer tu perfil</h2>
+                <h4>
+                  Gracias a tu información profesional podrán conocerte profesionales o inversores
                 </h4>
                 <div class="row">
                   <div class="col-lg-4">

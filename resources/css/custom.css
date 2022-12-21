@@ -84,7 +84,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 900;
+    font-weight: 400;
     font-size: 48px;
     line-height: 60px;
 }
@@ -113,6 +113,9 @@ p {
     line-height: 14px;
 }
 
+.text-strong {
+  font-weight: 900;
+}
 
 
 @media (max-width: 768px) {
@@ -281,21 +284,18 @@ p {
   height: 600px;
 }
 
-.home-message {
-  height: 1300px;
-
-}
-
 .bg-moon {
   background: url(/img/backgrounds/moon.png) no-repeat center bottom;
 }
 
 .bg-moon-astro {
   background: url(/img/backgrounds/home_moon_astro.png) no-repeat center bottom;
+  height: 562px;
 }
 
 .bg-planet-space {
   background: url(/img/backgrounds/home_planet_space.png) no-repeat center top;
+  height: 687px;
 }
 
 .bg-moon-planet {
@@ -325,6 +325,15 @@ p {
     background-size: 160%;
     height: 2450px;
   }
+
+  .bg-planet-space {
+    height: 1450px;
+  }
+
+  .bg-moon-astro {
+    height: 500px;
+  }
+
 }
 
 
