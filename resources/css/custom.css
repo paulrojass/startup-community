@@ -141,6 +141,13 @@ p {
         font-size: 18px;
         line-height: 22px;
     }
+
+    h6 {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
 }
   
 
@@ -313,6 +320,12 @@ p {
   bottom:0px;
 }
 
+.bg-benefit-item {
+  background: url(/img/backgrounds/benefit-item.png) no-repeat center bottom;
+  max-width: 336px;
+  max-height: 72px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -327,43 +340,27 @@ p {
   }
 
   .bg-planet-space {
-    height: 1450px;
+    background: none;
+    height: auto;
   }
 
   .bg-moon-astro {
-    height: 500px;
+    height: 550px;
   }
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.benefit-box {
+  width: 320px;
+  height: 72px;
+}
+.benefit-icon {
+  width: 30%;
+}
+.benefit-text {
+  width: 70%;
+} 
 
 
 

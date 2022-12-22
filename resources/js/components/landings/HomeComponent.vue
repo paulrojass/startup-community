@@ -1,20 +1,18 @@
 <template>
   <div>
-    <!-- ======= About Section ======= -->
-    <section class="home-main align-items-center ">
-      <div class="container-fluid">
-        <div class="row mx-auto position-relative">
-          <div class="col-lg-12">
-            <img src="img/astro_bg_home.png" class="img-fluid" data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
+    <!-- ======= Main Section Web======= -->
+    <section>
+      <div class="container-fluid py-5 d-none d-md-block">
+        <div class="row">
+          <div class="col-12">
+            <img src="img/astro_bg_home.png" class="img-fluid" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
               data-aos-duration="5000" data-aos-offset="0">
           </div>
-          <div class="col-lg-12 d-flex justify-content-center position-absolute"
-          data-aos="zoom-out"
+          <div class="col-12 d-flex justify-content-center position-absolute" data-aos="zoom-out"
             data-aos-duration="3000">
             <img src="img/astro_rocket_home.png" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-12 text-center position-absolute">
+          <div class="col-12 text-center position-absolute">
             <h1>Bienvenido a un Universo <br />de Alto Valor</h1>
             <h4>
               La comunidad que conecta Startups, Profesionales e Inversión
@@ -23,7 +21,33 @@
               Nuestra misión consiste en aportar la conexión para que puedas desarrollar<br />
               proyectos únicos que te permitan alcanzar nuevos universos.
             </h5>
-            <div class="container  py-4">
+            <h2 class="py-4">¡Somos la Comunidad StartUp!</h2>
+            <search-component></search-component>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Section Web -->
+    <!-- Main Section Movil -->
+    <section class="d-block d-md-none my-4">
+      <div class="container-fluid">
+        <div class="row mx-auto text-center">
+          <div class="col-12">
+            <h1>Bienvenido a un Universo<br/>de Alto Valor</h1>
+            <h4>
+              <strong>La comunidad que conecta Startups, Profesionales e Inversión</strong>
+            </h4>
+            <h6>
+              Nuestra misión consiste en aportar la conexión para que puedas desarrollar
+              <strong>proyectos únicos </strong>que te permitan alcanzar <strong>nuevos universos</strong>.
+            </h6>
+          </div>
+          <div class="col-12" data-aos="zoom-out"
+          data-aos-duration="3000">
+            <img src="img/backgrounds/home_movil_main.png" alt="">
+          </div>
+          <div class="col-12">
+            <div class="container-fluid px-0">
               <h2>
                 ¡Somos la Comunidad StartUp!
               </h2>
@@ -32,8 +56,8 @@
           </div>
         </div>
       </div>
-      </section>
-    <!-- End About Section -->
+    </section>
+    <!-- End MainSection -->
 
     <!-- ======= section buttons DEPRECATED ======= -->
     <!-- <section class="frame-blue">
@@ -55,14 +79,13 @@
     <!-- End section buttons -->
     
     <div class="container">
-    <div class="row px-5">
+      <div class="row px-5">
         <div class="d-lines"></div>
       </div>
     </div>
 
     <!-- ======= Features Section ======= -->
     <section class="bg-planet-space">
-
       <div class="container">
         <div class="row">
           <!-- <div class="col-12">
@@ -76,7 +99,6 @@
                 <h4>Formada por emprendedores, profesionales e inversores, que buscan cambiar el mundo.</h4>
                 <h4>Nuestra misión consiste en aportar las herramientas y recursos para que puedas desarrollar <br/>proyectos únicos que te permitan alcanzar nuevos universos. </h4>
               </div> -->
-
               <div class="text-center" data-aos="fade-zoom-in">
                 <h2>¡Prepárate para despegar!</h2>
                 <h4>Conoce los beneficios dentro de StartUp Community</h4>
@@ -84,7 +106,10 @@
             </div>
           </div>
         </div>
-        
+      </div>
+
+      <!-- Benefits Web-->
+      <div class="container d-none d-md-block">
         <div class="row">
           <div class="col-12">
             <div class="row" data-aos="zoom-in" data-aos-duration="1000">
@@ -146,10 +171,24 @@
           </div>
         </div>
       </div>
+      <!-- End Benefits Web -->
+
+      <!-- Benefits Movil -->
+      <div class="container-fluid d-block d-md-none py-4 d-flex">
+        <div class="row" >
+          <div class="col-12">
+            <img src="img/home/benefits.png"  width="100%">
+          </div>
+          <div class="col-12">
+            <img src="img/home/home_planet.png" width="100%">
+          </div>
+        </div>
+      </div>
+      <!-- End Benefits Movil -->
     </section>
     <!-- End Features Section -->
 
-    <section>
+    <section data-aos="fade-up" data-aos-duration="2000">
       <div class="container-fluid bg-moon-astro">
         <div class="row align-items-start" style="height: 25%">
           <div class="col-12 text-center">
@@ -169,12 +208,17 @@
         </div>
         <div class="row align-items-end pb-4" style="height: 35%">
           <div class="col-12 text-center">
-            <button class="btn btn-primary btn-lg">Crear Cuenta</button>
+
+            <button class="btn btn-primary btn-lg" type="button"
+            data-bs-toggle="modal" data-bs-target="#modal-investor"
+            >
+            ¡QUIERO UNIRME!
+          </button>
+
           </div>
         </div>
       </div>
     </section>
-
 
   </div>
 </template>
