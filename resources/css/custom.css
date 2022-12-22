@@ -117,6 +117,10 @@ p {
   font-weight: 900;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 
 @media (max-width: 768px) {
     h1 {
@@ -307,6 +311,12 @@ p {
 
 .bg-moon-planet {
   background: url(/img/backgrounds/home_moon_planet_space.png) no-repeat center bottom;
+}
+
+.bg-startup-feat {
+  background: url(/img/startup/bg-features.png) no-repeat center bottom;
+  background-color: #0e5394;
+
 }
 
 .img-person {

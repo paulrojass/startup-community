@@ -211,10 +211,7 @@
 
             <button class="btn btn-primary btn-lg" type="button"
             data-bs-toggle="modal" data-bs-target="#modal-investor"
-            >
-            ¡QUIERO UNIRME!
-          </button>
-
+            >¡QUIERO UNIRME!</button>
           </div>
         </div>
       </div>

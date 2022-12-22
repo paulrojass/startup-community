@@ -47,7 +47,7 @@
             </li>
             --}}
             <li>
-              <a class="nav-link" aria-current="page" href="startups">
+              <a class="nav-link" aria-current="page" href="startup">
                 Startups
               </a>
             </li>
@@ -67,7 +67,7 @@
             <button class="btn btn-primary btn-lg" type="button"
             data-bs-toggle="modal" data-bs-target="#modal-investor"
             >
-            @if (\Route::current()->getName() == 'landings')
+            @if (\Route::current()->getName() == 'landings' || \Route::current()->getName() == 'landings.startup')
             ¡QUIERO UNIRME!
             @elseif (\Route::current()->getName() == 'landings.investor')
             ¡QUIERO INVERTIR!

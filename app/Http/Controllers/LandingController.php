@@ -33,6 +33,19 @@ class LandingController extends Controller
     }
 
     /**
+     * Show the startup view.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function startup()
+    {
+        //if (auth()->user()->hasRole(Role::all())) {
+            return view('landings.startup');
+        //}
+        //return redirect()->route('select-role');
+    }
+
+    /**
      * Show the professional view.
      *
      * @return \Illuminate\Contracts\Support\Renderable

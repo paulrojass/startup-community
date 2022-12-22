@@ -53,6 +53,7 @@ import { Bootstrap5Pagination } from 'laravel-vue-pagination';
 //Landings
 import HomeComponent from './components/landings/HomeComponent.vue';
 import InvestorComponent from './components/landings/InvestorComponent.vue';
+import StartupLandingComponent from './components/landings/StartupComponent.vue';
 import ProfessionalComponent from './components/landings/ProfessionalComponent.vue';
 
 app.component('example-component', ExampleComponent);
@@ -65,6 +66,7 @@ app.component('single-component', SingleComponent);
 app.component('pagination', Bootstrap5Pagination);
 app.component('home-component', HomeComponent);
 app.component('investor-component', InvestorComponent);
+app.component('startup-landing-component', StartupLandingComponent);
 app.component('professional-component', ProfessionalComponent);
 
 //app.component('VueSlider', VueSlider)

@@ -16,6 +16,8 @@ Route::get('/', [App\Http\Controllers\LandingController::class, 'index'])
 ->name('landings');
 Route::get('investor', [App\Http\Controllers\LandingController::class, 'investor'])
 ->name('landings.investor');
+Route::get('startup', [App\Http\Controllers\LandingController::class, 'startup'])
+->name('landings.startup');
 Route::get('professional', [App\Http\Controllers\LandingController::class, 'professional'])
 ->name('landings.professional');
 
