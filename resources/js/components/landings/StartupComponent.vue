@@ -46,7 +46,7 @@
     
         <!-- ======= Features Section ======= -->
         <section class="frame-blue py-5">
-          <div class="container bg-startup-feat px-5"  data-aos="fade-in"
+          <div class="container bg-startup-feat px-lg-5"  data-aos="fade-in"
           data-aos-duration="1200">
             <h2 class="text-center">¿Qué entendemos como Startup?</h2>
             <div class="row py-3 align-items-center mx-lg-5">

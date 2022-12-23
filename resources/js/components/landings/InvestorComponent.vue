@@ -1,68 +1,117 @@
 <template>
     <div>
+
         <!-- ======= About Section ======= -->
-        <section class="investor-main py-auto me-0">
-          <div class="container-fluid px-0">
-          <div class="row align-items-center position-relative">
-            <div class="col-lg-12 d-flex justify-content-end">
-              <img src="img/backgrounds/investor_bg2.png" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-12 position-absolute"
-              data-aos="flip-right"
-              data-aos-duration="1200">
-              <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-12 text-center position-absolute">
-              <h1 class="">Forma parte de nuestra<br />tripulación</h1>
-              <h4 class="py-4">Perteneciendo a la comunidad startup como profesional experto,
-                te hace una <br />pieza clave para llegar a otros universos
-              </h4>
-              <div class="container">
-                <search-component></search-component>
-              </div> 
+        <section>
+          <div class="container-fluid px-0 d-none d-md-block align-center">
+            <div class="row align-items-centerposition-relative ">
+              <div class="col-lg-12 d-flex justify-content-end ">
+                <img src="img/backgrounds/investor_bg2.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-12 position-absolute text-center py-lg-5"
+                data-aos="flip-right"
+                data-aos-duration="1200">
+                <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-12 text-center position-absolute py-5">
+                <h1 class="pt-5">
+                  Invierte en ideas fuera de<br/>
+                  este planeta
+                </h1>
+                <h4 class="py-4">
+                  ¿Tienes el combustible necesario para hacer despegar esa StartUp única?
+                </h4>
+                <h3>
+                  Busca o deja que te encuentren los inversores más adecuados para ello.
+                </h3>
+                <h5 class="pt-4">
+                  (La conexión con los inversores dependen de los permisos concedidos por los mismos)
+                </h5>
+                <div class="container">
+                  <search-component></search-component>
+              </div>
             </div>
           </div>
         </div>
-        </section><!-- End About Section -->
-    
-        <!-- ======= Clients Section ======= -->
-        <section class="frame-blue py-3">
-          <div class="container text-center" data-aos="fade-up">
-            <h1>¿Cómo invertir en StartUps?</h1>
+
+          <div class="container-fluid d-block d-md-none py-4">
+            <div class="row align-items-center">
+              <div class="col-lg-12 text-center">
+                <h1 class="">
+                  Invierte en ideas fuera de<br/>
+                  este planeta
+                </h1>
+                <h4 class="py-4">
+                  ¿Tienes el combustible necesario para hacer despegar esa StartUp única?
+                </h4>
+                <img src="img/startup/rocket.png" class="img-fluid" alt="">
+                <h3>
+                  Busca o deja que te encuentren los inversores más adecuados para ello.
+                </h3>
+                <h5 class="pt-4">
+                  (La conexión con los inversores dependen de los permisos concedidos por los mismos)
+                </h5>
+                <div class="container">
+                  <search-component></search-component>
+                </div> 
+              </div>
+            </div>
           </div>
-        </section><!-- End Clients Section -->
+        </section><!-- End About Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
         <!-- ======= Features Section ======= -->
-        <section class="py-3">
-          <div class="container">
-            <div class="row pb-4 align-items-center">
+        <section class="frame-blue py-3">
+          <div class="container px-lg-5">
+            <h2 class="text-center"><strong>Invertir en StartUps</strong></h2>
+            <div class="row pb-5 align-items-center px-lg-5">
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/investor/col-1.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10">
-                <h4>
-                  Una de las preguntas que todo inversionista tiene al momento de entrar es este universo innovador. La respuesta no es una sola, sino una cantidad de variables que definen si el resultado de la inversión será satisfactorio.
-                </h4>
+                <h5 class="text-justify">
+                  Una de las preguntas que todo inversor tiene al momento de entrar en este universo de innovación y dudas de las Startups. La respuesta no es sencilla, ya que produce más preguntas: ¿es un sector que te interese?, ¿al que puedas aportar algo más que dinero?, ¿crees que hay un buen equipo?, ¿hay buen producto?... La cantidad de variables puede ser ilimitada, pero al final depende de un sí o un no y eso solo lo puede decidir el/los que genera/n la inversión
+                </h5>
               </div>
             </div>
-            <div class="row pb-4 align-items-center">
-              <div class="col-lg-10 p-4">
-                <h4>
-                  Las StartUp por lo general están en una fase muy joven, por lo que el riesgo de inversión es alto, las propuestas y modo de gestión del proyecto, definirán el éxito, conociendo esas 2 virtudes, el riesgo sigue siendo el mismo, pero la probabilidad de éxito se eleva
-                </h4>
-              </div>
-              <div class="col-lg-2 d-flex justify-content-center">
+            <div class="row pb-5 align-items-center px-lg-5">
+              <div class="col-lg-2 d-flex justify-content-center order-lg-2">
                 <img src="img/investor/col-2.png" class="img-fluid" alt="">
               </div>
+              <div class="col-lg-10 order-lg-1">
+                <h5 class="text-justify">
+                  Las StartUp pueden estar en una fase muy joven, siendo incluso una idea o proyecto, así que el riesgo de inversión suele ser alto, al igual que los retornos si la iniciativa da los frutos que se espera de ella. Las empresas gacela o en crecimiento instantáneo también tienen ese tipo de problema, en menor medida. Invertir en Coca Cola es bastante seguro, pero carece de retos y buenos rendimientos.
+                </h5>
+              </div>
             </div>
-            <div class="row pb-4 align-items-center">
+            <div class="row pb-5 align-items-center px-lg-5">
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/investor/col-3.png" class="img-fluid" alt="">
               </div>
-              <div class="col-lg-10 p-4">
-                <h4>
-                  Las StartUps son un cohete destinado a viajar más allá de lo que hoy conocemos y los inversionistas son el combustible que necesita para lograrlo.
-                </h4>
+              <div class="col-lg-10">
+                <h5 >
+                  El equipo, la propuesta e innovación definirán las posibilidades de éxito. Conocer más te acerca a aquello de lo que quieres formar parte. El riesgo sigue siendo el mismo, pero la información nos permitirá decidir con más criterio. No olvidemos que la incertidumbre está en las dos partes y el dinero sale de una. Las StartUps son un cohete destinado a viajar más allá de lo que hoy conocemos y los inversores son el combustible que necesita para lograrlo.
+                </h5>
               </div>
             </div>
           </div>
@@ -76,11 +125,11 @@
         <!-- End Clients Section -->
 
         <!-- ======= Features Section ======= -->
-        <section data-aos="fade-up" class="bg-moon">
+        <section data-aos="fade-up" class="bg-moon py-5">
           <div class="container">
             <div class="text-center"> 
-              <h2>Conoce los últimos StartUps</h2>
-              <h4>Adéntrate en la comunidad StartUp y conoce a detalles los pioneros de grandes ideas</h4>  
+              <h2><strong>Conoce las últimas inversiones</strong></h2>
+              <h4>¿Cuál puede ser tu destino favorito?</h4>  
               <div class="d-flex justify-content-center py-5">
                 <div class="comming-soon">
                   PRÓXIMAMENTE
@@ -129,12 +178,25 @@
               </div>
             </div>
             <div class="container-fluid pb-5">
-              <div class="row pb-5 ">
+              <div class="row">
                 <div class=" col-12 d-flex justify-content-center ">
                   <button class="btn btn-primary btn-lg"
                     data-bs-toggle="modal" data-bs-target="#modal-investor"
                     >¡QUIERO INVERTIR!
                   </button>
+                </div>
+              </div>
+            </div>
+            <div class="container d-none d-md-block">
+              <div class="row align-items-lg-end align-items-sm-start " style="height: 40%">
+                <div class="col-lg-4 col-xs-12 text-center">
+                  <a href="startup"      class="btn btn-outline-primary" style="min-width:300px">STARTUP O PROYECTOS</a>
+                </div>
+                <div class="col-lg-4 col-xs-12 text-center">
+                  <a href="professional" class="btn btn-outline-primary" style="min-width:300px">PROFESIONALES</a>
+                </div>
+                <div class="col-lg-4 col-xs-12 text-center">
+                  <a href="investor"     class="btn btn-outline-primary" style="min-width:300px">INVERSOR</a>
                 </div>
               </div>
             </div>
