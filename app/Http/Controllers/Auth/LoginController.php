@@ -52,19 +52,4 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    /**
-     * Temporal logout.
-     *
-     * @return void
-     */
-    public function perform()
-    {
-        Session::flush();
-        
-        Auth::logout();
-
-        return redirect('login');
-    }
-
-
 }

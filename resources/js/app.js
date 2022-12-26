@@ -50,6 +50,8 @@ import StartupCreateComponent from './components/forms/StartupCreateComponent.vu
 import SendSuscribe from './components/forms/SendSuscribe.vue';
 import SearchComponent from './components/forms/SearchComponent.vue';
 import { Bootstrap5Pagination } from 'laravel-vue-pagination';
+//login
+import RegisterComponent from './components/auth/RegisterComponent.vue';
 //Landings
 import HomeComponent from './components/landings/HomeComponent.vue';
 import InvestorComponent from './components/landings/InvestorComponent.vue';
@@ -64,6 +66,7 @@ app.component('search-component', SearchComponent);
 app.component('information-component', InformationComponent);
 app.component('single-component', SingleComponent);
 app.component('pagination', Bootstrap5Pagination);
+app.component('register-component', RegisterComponent);
 app.component('home-component', HomeComponent);
 app.component('investor-component', InvestorComponent);
 app.component('startup-landing-component', StartupLandingComponent);

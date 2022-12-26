@@ -65,7 +65,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+label
+{
   font-family: "Nunito", sans-serif;
   font-style: normal;
   color: #fff;
@@ -113,8 +115,39 @@ p {
     line-height: 14px;
 }
 
+label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0.75rem 0 .25rem;
+}
+
+.theme-link {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.theme-link:hover {
+  color: #BD13B8;
+}
+
+.input-login,
+.input-login:active,
+.input-login:hover {
+  color: #0E5394;
+}
+
 .text-strong {
   font-weight: 900;
+}
+
+.text-black {
+  color: #292929;
 }
 
 .text-justify {
@@ -130,8 +163,8 @@ p {
     
     h2 {
         font-weight: 400;
-        font-size: 32px;
-        line-height: 36px;
+        font-size: 28px;
+        line-height: 32px;
     }
     
     h3 {
@@ -322,7 +355,10 @@ p {
 .bg-startup-feat {
   background: url(/img/startup/bg-features.png) no-repeat center bottom;
   background-color: #0e5394;
+}
 
+.bg-login {
+  background: url(/img/general/bg_login.png) no-repeat center top;
 }
 
 .img-person {
@@ -388,6 +424,22 @@ p {
     margin-bottom: 2em;
 }
 
+.astro-circle {
+  max-width: 221px;
+  max-height: 221px;
+  background-color: #004e8f;
+  border-radius: 50%;
+}
+
+.astro-img {
+  margin: auto;
+  max-height: 90%;
+}
+
+.astro-frame {
+  height: 85px;
+  background: #004e8f;
+}
 
 /*--------------------------------------------------------------
 # Footer

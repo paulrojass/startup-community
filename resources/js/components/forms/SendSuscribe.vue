@@ -11,15 +11,15 @@
                             <h4 class="dark-text">Conecta con Startup Community</h4>
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nombres y apellidos</label>
+                            <label for="name" class="form-label text-black">Nombres y apellidos</label>
                             <input type="name" class="form-control" id="name" name="name" v-model="form.name" v-on:input="verifyFields">
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label text-black">Email</label>
                             <input type="email" class="form-control" id="email" name="email" v-model="form.email" v-on:input="verifyFields">
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label">Mensaje</label>
+                            <label for="message" class="form-label text-black">Mensaje</label>
                             <textarea class="form-control" name="message" id="message" v-model="form.message" rows="6" required v-on:input="verifyFields"></textarea>
                         </div>
                         <div class="mb-3 d-flex justify-content-center">

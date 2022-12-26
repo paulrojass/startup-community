@@ -32,4 +32,4 @@ Route::get('/startups/create', [App\Http\Controllers\StartupController::class, '
     ->name('startup-create');
 
 //Provisional
-Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'perform']);
+Route::get('/logout', [App\Http\Controllers\LandingController::class, 'perform']);

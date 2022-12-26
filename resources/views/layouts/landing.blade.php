@@ -64,8 +64,7 @@
             </li>
           </ul>
           <div class="text-center">
-            <button class="btn btn-primary btn-lg" type="button"
-            data-bs-toggle="modal" data-bs-target="#modal-investor"
+            <a class="btn btn-primary btn-lg" href="register"
             >
             @if (\Route::current()->getName() == 'landings' || \Route::current()->getName() == 'landings.startup')
             ¡QUIERO UNIRME!
@@ -74,7 +73,7 @@
             @else
             ¡QUIERO TRABAJAR!
             @endif
-          </button>
+            </a>
           </div>
         </div>
       </div>

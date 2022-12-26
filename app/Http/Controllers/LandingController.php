@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session, Auth;
 
 class LandingController extends Controller
 {
@@ -57,5 +58,20 @@ class LandingController extends Controller
         //}
         //return redirect()->route('select-role');
     }
+
+    /**
+     * Temporal logout.
+     *
+     * @return void
+     */
+    public function perform()
+    {
+        Session::flush();
+        
+        Auth::logout();
+
+        return redirect('login');
+    }
+
 
 }
