@@ -86,7 +86,13 @@
                 </div>
                 <div class="col-12 text-center pt-4">
                     <p v-if="show_msg_fields">Debe llenar todos los campos</p>
+                    <p v-if="show_msg_error">{{ msg }}</p>
                     <p v-if="show_msg_role">Debe seleccionar un rol</p>
+                    <p v-if="show_msg_waiting">
+                        <div class="spinner-grow text-secondary spinner-grow-sm" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>    
+                         Registrando...</p>
                 </div>
             </div>
         </div>
@@ -106,8 +112,12 @@ export default {
             },
             btns: null,
             btnContainer: null,
+            msg: '',
             show_msg_fields: false,
-            show_msg_role: false
+            show_msg_role: false,
+            show_msg_error: false,
+            show_msg_waiting: false,
+            showModalSuccess: false,
         }
     },
     mounted() {
@@ -130,16 +140,22 @@ export default {
         },
         async submit(){
             this.show_msg_fields = false
+            this.show_msg_error = false
             this.show_msg_role = false
             if(this.form.name === '' || this.form.email === '' || this.form.message === '') {
                 this.show_msg_fields = true
             } else if (this.form.role == ''){
                 this.show_msg_role = true
             } else {
+                this.show_msg_waiting = true
                 await axios.post('api/subscribe',this.form).then(response=>{
-                    this.show_msg = true;
+                    this.show_msg_waiting = false
                 }).catch(error=>{
-                    console.log(error)
+                    this.show_msg_waiting = false
+                    if(error.message) {
+                        this.msg = 'Por favor ingrese un email válido'
+                    }
+                    this.show_msg_error =  true
                 })
             }
         }

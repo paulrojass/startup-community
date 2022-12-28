@@ -47,7 +47,12 @@ import StartupsComponent from './components/StartupsComponent.vue';
 import InformationComponent from './components/InformationComponent.vue';
 import SingleComponent from './components/SingleComponent.vue';
 import StartupCreateComponent from './components/forms/StartupCreateComponent.vue';
+//Modals
 import SendSuscribe from './components/forms/SendSuscribe.vue';
+import SuccessSubscribe from './components/sections/SuccessSubscribe.vue';
+
+
+
 import SearchComponent from './components/forms/SearchComponent.vue';
 import { Bootstrap5Pagination } from 'laravel-vue-pagination';
 //login
@@ -64,6 +69,7 @@ app.component('example-component', ExampleComponent);
 app.component('startups-component', StartupsComponent);
 app.component('startup-create-component', StartupCreateComponent);
 app.component('send-suscribe', SendSuscribe);
+app.component('success-susbcribe', SuccessSubscribe);
 app.component('search-component', SearchComponent);
 app.component('information-component', InformationComponent);
 app.component('single-component', SingleComponent);

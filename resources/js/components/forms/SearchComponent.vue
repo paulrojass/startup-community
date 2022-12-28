@@ -9,9 +9,6 @@
                 </span>
 
                 <div class="rail-select">
-                <div class="select-side">
-                    <i class="glyphicon glyphicon-menu-down blue"></i>
-                </div>
                 <select class="form-select shadow-none search-input" name="category" aria-label="Default select example">
                     <option value="">Categorías</option>
                     <option value="startup">Startup</option>

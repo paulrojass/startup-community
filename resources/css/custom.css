@@ -191,6 +191,12 @@ label {
         line-height: 18px;
     }
 
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+    }
+
 }
   
 
@@ -204,6 +210,10 @@ label {
     line-height: 22px;
     /* color: #FFFFFF !important; */
     color: #0071BC !important;
+}
+
+.nav-link:hover {
+  color: #BD13B8 !important;
 }
 
 .btn-primary {
@@ -344,7 +354,7 @@ label {
 }
 
 .bg-planet-space {
-  background: url(/img/backgroundsbg_login/home_planet_space.png) no-repeat center top;
+  background: url(/img/backgrounds/home_planet_space.png) no-repeat center top;
   height: 687px;
 }
 
@@ -361,6 +371,21 @@ label {
   background: url(/img/general/bg_login.png) no-repeat center top;
 }
 
+.benefit-item {
+  background: url(/img/backgrounds/benefit-item.png) no-repeat center top;
+  max-height: 78px;
+  max-width: 340px;
+}
+
+.benefit-item .benefit-icon {
+  width: 18%;
+  margin: auto;
+}
+.benefit-item .benefit-text {
+  width: 82%;
+  padding: 0.6em .4em;
+}
+
 .img-person {
   max-width: 500px;
   max-height: 400px;
@@ -371,14 +396,6 @@ label {
   margin-left: -250px;
   bottom:0px;
 }
-
-.bg-benefit-item {
-  background: url(/img/backgrounds/benefit-item.png) no-repeat center bottom;
-  max-width: 336px;
-  max-height: 72px;
-}
-
-
 
 @media (max-width: 768px) {
   .bg-moon-astro {

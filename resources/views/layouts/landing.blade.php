@@ -28,11 +28,19 @@
   <div class="Cabezal_PrincipalDefault">
     <nav class="navbar navbar-expand-lg bg-transparent">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-image:url(img/general/menu.png)"></span>
         </button>
-        <a class="navbar-brand" href="/">
-          <img src="/img/logos/color.png" alt="">
+        <a class="navbar-brand mx-auto " href="/" >
+          <img src="/img/logos/phone.png" class="d-block d-md-none">
+          <img src="/img/logos/color.png" class="d-none d-md-block">
+        </a>
+        <a href="/" class="d-block d-md-none dark-text">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
+        </svg>
+
+
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-3">
@@ -47,17 +55,17 @@
             </li>
             --}}
             <li>
-              <a class="nav-link" aria-current="page" href="startup">
+              <a class="nav-link text-center" aria-current="page" href="startup">
                 Startups
               </a>
             </li>
             <li>
-              <a class="nav-link" aria-current="page" href="professional">
+              <a class="nav-link text-center" aria-current="page" href="professional">
                 Profesionales
               </a>
             </li>
             <li>
-              <a class="nav-link" aria-current="page" href="investor">
+              <a class="nav-link text-center" aria-current="page" href="investor">
                 Inversores
               </a>
             </li>
@@ -86,7 +94,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    <div class="footer-top pt-3 pb-2">
+    <div class="footer-top py-auto">
       <div class="container">
         <div class="row gy-4">
           {{--

@@ -2,13 +2,13 @@
   <div>
     <!-- ======= Main Section Web======= -->
     <section>
-      <div class="container-fluid py-5 d-none d-md-block">
+      <div class="container-fluid py-5 d-none d-lg-block">
         <div class="row">
           <div class="col-12">
-            <img src="img/astro_bg_home.png" class="img-fluid" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            <img src="img/backgrounds/astro_bg_home.png" class="img-fluid" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
               data-aos-duration="5000" data-aos-offset="0">
           </div>
-          <div class="col-12 d-flex justify-content-center position-absolute" data-aos="zoom-out"
+          <div class="col-12  pt-5 d-flex justify-content-center position-absolute" data-aos="zoom-out"
             data-aos-duration="3000">
             <img src="img/astro_rocket_home.png" class="img-fluid" alt="">
           </div>
@@ -29,7 +29,7 @@
     </section>
     <!-- End Main Section Web -->
     <!-- Main Section Movil -->
-    <section class="d-block d-md-none my-4">
+    <section class="d-block d-lg-none my-4">
       <div class="container-fluid">
         <div class="row mx-auto text-center">
           <div class="col-12">
@@ -174,10 +174,65 @@
       <!-- End Benefits Web -->
 
       <!-- Benefits Movil -->
-      <div class="container-fluid d-block d-md-none py-4 d-flex">
-        <div class="row" >
+      <div class="container-fluid d-block d-md-none py-4  px-auto d-flex">
+        <div class="row " >
           <div class="col-12">
-            <img src="img/home/benefits.png"  width="100%">
+            <div class="row justify-content-center">
+              <div class="col-12 benefit-item mb-3 d-flex">
+                <img src="img/home/col_1.png" class="benefit-icon"/>
+                <div class="benefit-text">
+                  <h3 class="mb-0"><strong>El Big Bang</strong></h3>
+                    <p>
+                  Los inicios son difíciles y a veces exdivlosivos, siempre es bueno tener apoyo.
+                    </p>
+                </div>
+              </div>
+              <div class="col-12 benefit-item mb-3 d-flex">
+                <img src="img/home/col_2.png" class="benefit-icon"/>
+                <div class="benefit-text">
+                  <h3 class="mb-1"><strong>Muestra tu estrella</strong></h3>
+                  <p>
+                    Da visibilidad a tu proyecto o S tartUp para su proyección y difusión.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 benefit-item mb-3 d-flex">
+                <img src="img/home/col_3.png" class="benefit-icon"/>
+                <div class="benefit-text">
+                  <h3 class="mb-1"><strong>Conoce otras civilizaciones</strong></h3>
+                  <p>
+                  Más emprendedores, profesionales expertos e inversores quieren conocerte.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 benefit-item mb-3 d-flex">
+                <img src="img/home/col_4.png" class="benefit-icon"/>
+                <div class="benefit-text">
+                  <h3 class="mb-1"><strong>Explora nuevos universos</strong></h3>
+                  <p>
+                  Conoce proyectos que te puedan guiar, permitan participar o aportar valor.
+                  </p>
+                </div>                
+              </div>
+              <div class="col-12 benefit-item mb-3 d-flex">
+                <img src="img/home/col_5.png" class="benefit-icon"/>
+                <div class="benefit-text">
+                  <h3 class="mb-0"><strong>Cuestión de Fe y Ciencia</strong></h3>
+                  <p>
+                  Creemos en el poder de la innovación, investigación, desarrollo y compartir la experiencia.
+                  </p>
+                </div>               
+              </div>
+              <div class="col-12 benefit-item mb-3 d-flex">
+                <img src="img/home/col_6.png" class="benefit-icon"/>
+                <div class="benefit-text">
+                  <h3 class="mb-1"><strong>Hipervelocidad</strong></h3>
+                  <p>
+                  Acelera y traza la ruta de tu StartUp con servicios premium a medida.
+                  </p>
+                </div>              
+              </div>
+            </div>
           </div>
           <div class="col-12">
             <img src="img/home/home_planet.png" width="100%">
@@ -190,25 +245,24 @@
 
     <section data-aos="fade-up" data-aos-duration="2000">
       <div class="container-fluid bg-moon-astro">
-        <div class="row align-items-start" style="height: 25%">
+        <div class="row align-items-start" style="height: 20%">
           <div class="col-12 text-center">
             <h2 class="text-strong">Conoce nuestros tres universos</h2>
           </div>
         </div>
-        <div class="row align-items-lg-end align-items-sm-start" style="height: 40%">
-          <div class="col-lg-4 col-xs-12 text-center">
+        <div class="row align-items-sm-end align-items-xs-start" style="height: 50%">
+          <div class="col-md-4 col-xs-12 text-center">
             <a :href="this.startupRoute"      class="btn btn-outline-primary" style="min-width:200px">Startup</a>
           </div>
-          <div class="col-lg-4 col-xs-12 text-center">
+          <div class="col-md-4 col-xs-12 text-center">
             <a :href="this.professionalRoute" class="btn btn-outline-primary" style="min-width:200px">Profesional</a>
           </div>
-          <div class="col-lg-4 col-xs-12 text-center">
+          <div class="col-md-4 col-xs-12 text-center">
             <a :href="this.investorRoute"     class="btn btn-outline-primary" style="min-width:200px">Inversor</a>
           </div>
         </div>
-        <div class="row align-items-end pb-4" style="height: 35%">
+        <div class="row align-items-end pb-5" style="height: 35%">
           <div class="col-12 text-center">
-
             <button class="btn btn-primary btn-lg" type="button"
             data-bs-toggle="modal" data-bs-target="#modal-investor"
             >¡QUIERO UNIRME!</button>
@@ -229,7 +283,7 @@ export default {
     },
     data () {
       return {
-        startupRoute: "startups",
+        startupRoute: "startup",
         investorRoute: "investor",
         professionalRoute: "professional"
       }
