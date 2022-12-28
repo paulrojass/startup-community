@@ -64,7 +64,7 @@
             </li>
           </ul>
           <div class="text-center">
-            <a class="btn btn-primary btn-lg" href="register"
+            <a class="btn btn-primary btn-lg" href="pre-register"
             >
             @if (\Route::current()->getName() == 'landings' || \Route::current()->getName() == 'landings.startup')
             ¡QUIERO UNIRME!

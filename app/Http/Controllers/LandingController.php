@@ -60,6 +60,16 @@ class LandingController extends Controller
     }
 
     /**
+     * Show the pre-register view.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function preRegister()
+    {
+        return view('auth.pre-register');
+    }
+
+    /**
      * Temporal logout.
      *
      * @return void

@@ -265,7 +265,7 @@ label {
 .search-bar .search-input {
     border: 0px;
     /* width: 94%; */
-    /* color: #BD13B8; */
+    color: #BD13B8;
 }
 
 .navbar-toggler {
@@ -344,7 +344,7 @@ label {
 }
 
 .bg-planet-space {
-  background: url(/img/backgrounds/home_planet_space.png) no-repeat center top;
+  background: url(/img/backgroundsbg_login/home_planet_space.png) no-repeat center top;
   height: 687px;
 }
 

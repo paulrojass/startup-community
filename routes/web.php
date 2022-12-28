@@ -22,12 +22,13 @@ Route::get('professional', [App\Http\Controllers\LandingController::class, 'prof
 ->name('landings.professional');
 
 Route::get('/select-role', [App\Http\Controllers\HomeController::class, 'selectRole'])->name('select-role');
+Route::get('/pre-register', [App\Http\Controllers\LandingController::class, 'preRegister'])->name('pre-register');
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
-Route::get('/startups', [App\Http\Controllers\StartupController::class, 'startupList'])
-    ->name('startups');
+Route::get('/directory', [App\Http\Controllers\DirectoryController::class, 'index'])
+    ->name('directory');
 Route::get('/startups/create', [App\Http\Controllers\StartupController::class, 'create'])
     ->name('startup-create');
 

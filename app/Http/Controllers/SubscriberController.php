@@ -15,7 +15,8 @@ class SubscriberController extends Controller
     {
         $validator = Validator::make($request->all(),
             [
-                'email' => 'required|email|unique:subscribers'
+                'name' => 'required',
+                'email' => 'required|email|unique:subscribers',
             ]
         );
     
@@ -26,11 +27,13 @@ class SubscriberController extends Controller
         $email = $request->all()['email'];
         $name = $request->all()['name'];
         $message = $request->all()['message'];
+        $role = $request->all()['role'];
         $subscriber = Subscriber::create(
             [
             'email' => $email,
             'name' => $name,
-            'message' => $message
+            'message' => $message,
+            'role' => $role
             ]
         ); 
 

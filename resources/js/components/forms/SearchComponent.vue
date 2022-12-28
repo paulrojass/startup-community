@@ -1,13 +1,26 @@
 <template>
     <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
-            <form action="startups" method="GET">
+            <form action="directory" method="GET">
             <div class="search-bar">
                 <div class="input-group">
                 <span class="input-group-text icon-input">
-                    <i class="bi bi-sliders"></i>
+                    <i class="bi bi-ui-checks"></i>
                 </span>
-                <input type="text" class="form-control shadow-none search-input" name="search" placeholder="Filtrar por: Colocar tu búsqueda de Startup aquí">
+
+                <div class="rail-select">
+                <div class="select-side">
+                    <i class="glyphicon glyphicon-menu-down blue"></i>
+                </div>
+                <select class="form-select shadow-none search-input" name="category" aria-label="Default select example">
+                    <option value="">Categorías</option>
+                    <option value="startup">Startup</option>
+                    <!-- <option value="professional">Profesional</option>
+                    <option value="investor">Inversor</option> -->
+                </select>
+                </div>
+
+                <input type="text" class="form-control shadow-none search-input" name="search" placeholder="Colocar tu búsqueda de Startup aquí">
                 <button class="btn btn-primary search-button" type="submit">
                     <i class="bi bi-search"></i> BUSCAR
                 </button>
