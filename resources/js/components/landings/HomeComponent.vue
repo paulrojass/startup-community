@@ -2,8 +2,8 @@
   <div>
     <!-- ======= Main Section Web======= -->
     <section>
-      <div class="container-fluid py-5 d-none d-lg-block">
-        <div class="row">
+      <div class="container-fluid pt-5 d-none d-lg-block ">
+        <div class="row pt-5">
           <div class="col-12">
             <img src="img/backgrounds/astro_bg_home.png" class="img-fluid" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
               data-aos-duration="5000" data-aos-offset="0">
@@ -14,14 +14,14 @@
           </div>
           <div class="col-12 text-center position-absolute">
             <h1>Bienvenido a un Universo <br />de Alto Valor</h1>
-            <h4>
+            <h3>
               La comunidad que conecta Startups, Profesionales e Inversión
-            </h4>
+            </h3>
             <h5>
               Nuestra misión consiste en aportar la conexión para que puedas desarrollar<br />
-              proyectos únicos que te permitan alcanzar nuevos universos.
+              <strong>proyectos únicos</strong> que te permitan alcanzar <strong>nuevos universos.</strong> 
             </h5>
-            <h2 class="py-4">¡Somos la Comunidad StartUp!</h2>
+            <h2 class="pt-5">¡Somos la Comunidad StartUp!</h2>
             <search-component></search-component>
           </div>
         </div>
@@ -34,13 +34,13 @@
         <div class="row mx-auto text-center">
           <div class="col-12">
             <h1>Bienvenido a un Universo<br/>de Alto Valor</h1>
-            <h4>
+            <h3>
               <strong>La comunidad que conecta Startups, Profesionales e Inversión</strong>
-            </h4>
-            <h6>
+            </h3>
+            <h5>
               Nuestra misión consiste en aportar la conexión para que puedas desarrollar
               <strong>proyectos únicos </strong>que te permitan alcanzar <strong>nuevos universos</strong>.
-            </h6>
+            </h5>
           </div>
           <div class="col-12" data-aos="zoom-out"
           data-aos-duration="3000">
@@ -92,16 +92,13 @@
             <img src="img/backgrounds/home_feat.png" class="img-fluid">
           </div> -->
           <div class="col-12">
-            <div class="mx-5">
-              <!-- <div class="d-lines"></div>
-              <div class="text-center" data-aos="fade-zoom-in">
-                <h2>¡Somos la Comunidad Startup!</h2>
-                <h4>Formada por emprendedores, profesionales e inversores, que buscan cambiar el mundo.</h4>
-                <h4>Nuestra misión consiste en aportar las herramientas y recursos para que puedas desarrollar <br/>proyectos únicos que te permitan alcanzar nuevos universos. </h4>
-              </div> -->
+            <div class="mx-lg-5 px-lg-5">
               <div class="text-center" data-aos="fade-zoom-in">
                 <h2>¡Prepárate para despegar!</h2>
-                <h4>Conoce los beneficios dentro de StartUp Community</h4>
+                <h4 class="mx-lg-5 px-lg-5">
+                  Conoce los beneficios dentro de StartUp Community
+                  para que puedas cambiar el<strong> cambiar el mundo.</strong>
+                </h4>
               </div>
             </div>
           </div>

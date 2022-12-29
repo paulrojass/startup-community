@@ -18,13 +18,14 @@
                   Invierte en ideas fuera de<br/>
                   este planeta
                 </h1>
-                <h4 class="py-4">
+                <h4 class="pb-4">
                   ¿Tienes el combustible necesario para hacer despegar esa StartUp única?
                 </h4>
                 <h3>
-                  Busca o deja que te encuentren los inversores más adecuados para ello.
+                  Busca o deja que te encuentren los inversores más<br/>
+                  adecuados para ello.
                 </h3>
-                <h5 class="pt-4">
+                <h5 class="py-4">
                   (La conexión con los inversores dependen de los permisos concedidos por los mismos)
                 </h5>
                 <div class="container">
@@ -83,35 +84,35 @@
         <!-- ======= Features Section ======= -->
         <section class="frame-blue py-3">
           <div class="container px-lg-5">
-            <h2 class="text-center"><strong>Invertir en StartUps</strong></h2>
-            <div class="row pb-5 align-items-center px-lg-5">
+            <h2 class="text-center"><strong>¿Invertir en StartUps?</strong></h2>
+            <div class="row pb-5 align-items-center px-lg-5 mx-lg-5">
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/investor/col-1.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10">
-                <h5 class="text-justify">
+                <h6 class="text-justify">
                   Una de las preguntas que todo inversor tiene al momento de entrar en este universo de innovación y dudas de las Startups. La respuesta no es sencilla, ya que produce más preguntas: ¿es un sector que te interese?, ¿al que puedas aportar algo más que dinero?, ¿crees que hay un buen equipo?, ¿hay buen producto?... La cantidad de variables puede ser ilimitada, pero al final depende de un sí o un no y eso solo lo puede decidir el/los que genera/n la inversión
-                </h5>
+                </h6>
               </div>
             </div>
-            <div class="row pb-5 align-items-center px-lg-5">
+            <div class="row pb-5 align-items-center px-lg-5 mx-lg-5">
               <div class="col-lg-2 d-flex justify-content-center order-lg-2">
                 <img src="img/investor/col-2.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 order-lg-1">
-                <h5 class="text-justify">
+                <h6 class="text-justify">
                   Las StartUp pueden estar en una fase muy joven, siendo incluso una idea o proyecto, así que el riesgo de inversión suele ser alto, al igual que los retornos si la iniciativa da los frutos que se espera de ella. Las empresas gacela o en crecimiento instantáneo también tienen ese tipo de problema, en menor medida. Invertir en Coca Cola es bastante seguro, pero carece de retos y buenos rendimientos.
-                </h5>
+                </h6>
               </div>
             </div>
-            <div class="row pb-5 align-items-center px-lg-5">
+            <div class="row pb-5 align-items-center px-lg-5 mx-lg-5">
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/investor/col-3.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10">
-                <h5 >
+                <h6 >
                   El equipo, la propuesta e innovación definirán las posibilidades de éxito. Conocer más te acerca a aquello de lo que quieres formar parte. El riesgo sigue siendo el mismo, pero la información nos permitirá decidir con más criterio. No olvidemos que la incertidumbre está en las dos partes y el dinero sale de una. Las StartUps son un cohete destinado a viajar más allá de lo que hoy conocemos y los inversores son el combustible que necesita para lograrlo.
-                </h5>
+                </h6>
               </div>
             </div>
           </div>
@@ -136,42 +137,42 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row px-lg-5 pb-4">
               <div class="col-lg-4">
                 <div class="card comming-card">
-                  <div class="card-body ">
+                  <div class="">
                     <div class="d-flex justify-content-center">
                       <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
                     </div>
                     <div class="comming-text p-4">
-                      <h6 class="text-center px-5">Redes sociales para golfistas</h6>
-                      <p class="px-4 pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <h4 class="text-center px-lg-5">Redes sociales para golfistas</h4>
+                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card comming-card">
-                  <div class="card-body ">
+                  <div class="">
                     <div class="d-flex justify-content-center">
                       <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
                     </div>
                     <div class="comming-text p-4">
-                      <h6 class="text-center px-5">Redes sociales para golfistas</h6>
-                      <p class="px-4 pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <h4 class="text-center px-lg-5">Redes sociales para Artistas</h4>
+                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card comming-card">
-                  <div class="card-body ">
+                  <div class="">
                     <div class="d-flex justify-content-center">
                       <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
                     </div>
                     <div class="comming-text p-4">
-                      <h6 class="text-center px-5">Redes sociales para golfistas</h6>
-                      <p class="px-4 pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <h4 class="text-center px-lg-5">Comunidad Startup de Inversionistas</h4>
+                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
                     </div>
                   </div>
                 </div>

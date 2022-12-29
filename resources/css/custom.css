@@ -77,22 +77,16 @@ h1 {
     font-weight: 900;
     font-size: 61px;
     line-height: 65px;
-    align-self: stretch;
-    flex-grow: 0;
-    font-stretch: normal;
-    line-height: 1.07;
-    letter-spacing: normal;
-    color: #fff;
 }
 
 h2 {
     font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 44px;
+    line-height: 52px;
 }
 
 h3 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 32px;
     line-height: 36px;
 }
@@ -100,13 +94,19 @@ h3 {
 h4 {
     font-weight: 600;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 32px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 h6 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
 }
 
 p {
@@ -169,34 +169,37 @@ label {
     
     h3 {
         font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 22px;
     }
     
     h4 {
-        font-weight: 900;
+        font-weight: 700;
         font-size: 18px;
-        line-height: 22px;
+        line-height: 28px;
     }
 
     h5 {
       font-weight: 600;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 18px;
   }
 
     h6 {
-        font-weight: 900;
+        font-weight: 600;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 19px;
     }
 
     p {
       font-weight: 400;
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 11.81px;
+      line-height: 11.81px;
     }
 
+    .text-justify {
+      text-align: center;
+    }
 }
   
 
@@ -344,6 +347,11 @@ label {
   height: 600px;
 }
 
+.bg-startup-main {
+  background: url(/img/startup/bg-main.png) no-repeat right bottom;
+  height: 619px;
+}
+
 .bg-moon {
   background: url(/img/backgrounds/moon.png) no-repeat center bottom;
 }
@@ -398,6 +406,10 @@ label {
 }
 
 @media (max-width: 768px) {
+  .bg-startup-main {
+    background: none;
+  }
+
   .bg-moon-astro {
     background-size: 160%;
     height: 400px;
@@ -416,6 +428,12 @@ label {
   .bg-moon-astro {
     height: 550px;
   }
+
+  .d-lines {
+    height: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
 }
 

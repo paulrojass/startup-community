@@ -1,5 +1,5 @@
 <template>
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center px-5">
         <div class="col-lg-8">
             <form action="directory" method="GET">
             <div class="search-bar">

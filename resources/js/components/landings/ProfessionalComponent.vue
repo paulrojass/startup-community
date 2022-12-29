@@ -16,10 +16,10 @@
                   tripulación que desees
                 </h1>
                 <h3>¿Cuál puede ser tu destino favorito?</h3>
-                <h4>
-                  Perteneciendo a la comunidad StartUp como profesional, te conviertes en pieza clave
+                <h5>
+                  Perteneciendo a la comunidad StartUp como profesional, te conviertes en pieza clave<br/>
                   para llegar a otros universos.                  
-                </h4>
+                </h5>
                 <h2 class="pt-4">Decide en cual tripulación encajas mejor</h2>
                 <div class="container">
                   <search-component></search-component>
@@ -35,10 +35,10 @@
                   Podrás formar parte de la tripulación que desees
                 </h1>
                 <h3>¿Cuál puede ser tu destino favorito?</h3>
-                <h3>
+                <h5>
                   Perteneciendo a la comunidad StartUp como profesional, te conviertes en pieza clave
                   para llegar a otros universos.  
-                </h3>
+                </h5>
                 <img src="img/startup/rocket.png" class="img-fluid" alt="">
                 <h2 class="pt-4">Decide en cual tripulación encajas mejor</h2>
                 <div class="container">
@@ -80,8 +80,8 @@
     
         <!-- ======= Features Section ======= -->
         <section class="frame-blue py-4">
-          <div class="container">
-            <div class="row pb-4  align-items-center px-lg-5">
+          <div class="container px-lg-5">
+            <div class="row pb-4  align-items-center px-lg-5 mx-lg-5"> 
               <h2 class="text-center mb-5">
                 ¿Qué papel juega un profesional<br/>
                 experto en la comunidad StartUp?              
@@ -90,29 +90,29 @@
                 <img src="img/professional/col-1.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 p-4">
-                <h5 class="text-justify">
+                <h6 class="text-justify">
                   Llamamos profesionales expertos a las personas que poseen conocimientos y dominios de un área en específica. Ya sea la parte investigadora, desarrolladora, tester, marketing, o cualquier otra tarea que se necesite desarrollar en una StartUp.
-                </h5>
+                </h6>
               </div>
             </div>
-            <div class="row pb-4 align-items-center px-lg-5">
+            <div class="row pb-4 align-items-center px-lg-5 mx-lg-5"> 
               <div class="col-lg-2 d-flex justify-content-center order-lg-1">
                 <img src="img/professional/col-2.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 p-4">
-                <h5 class="text-justify order-lg-2">
+                <h6 class="text-justify order-lg-2">
                   Pertenecer a la tripulación de StartUp Community como profesional, te facilita visibilidad frente a aquellas empresas que necesitan gente como tú. Con buenos tripulantes, el viaje puede ser una experiencia única.
-                </h5>
+                </h6>
               </div>
             </div>
-            <div class="row pb-4 align-items-center px-lg-5">
+            <div class="row pb-4 align-items-center px-lg-5 mx-lg-5"> 
               <div class="col-lg-2 d-flex justify-content-center">
                 <img src="img/professional/col-3.png" class="img-fluid" alt="">
               </div>
               <div class="col-lg-10 p-4">
-                <h5 class="text-justify">
+                <h6 class="text-justify">
                   El éxito de la innovación va de la mano de personas, el conocimiento es poder y el hacer es mover. El viaje hacia otros universos puede ser más o menos largo y siempre genera grandes dosis de crecimiento. Escoge dónde te quieres ubicar en función del destino que desees.
-                </h5>
+                </h6>
               </div>
             </div>
           </div>
@@ -130,42 +130,42 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row px-lg-5 pb-4">
               <div class="col-lg-4">
                 <div class="card comming-card">
-                  <div class="card-body ">
+                  <div class="">
                     <div class="d-flex justify-content-center">
                       <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
                     </div>
                     <div class="comming-text p-4">
-                      <h6 class="text-center px-5">Redes sociales para golfistas</h6>
-                      <p class="px-4 pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <h4 class="text-center px-lg-5">Redes sociales para golfistas</h4>
+                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card comming-card">
-                  <div class="card-body ">
+                  <div class="">
                     <div class="d-flex justify-content-center">
                       <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
                     </div>
                     <div class="comming-text p-4">
-                      <h6 class="text-center px-5">Redes sociales para golfistas</h6>
-                      <p class="px-4 pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <h4 class="text-center px-lg-5">Redes sociales para Artistas</h4>
+                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card comming-card">
-                  <div class="card-body ">
+                  <div class="">
                     <div class="d-flex justify-content-center">
                       <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
                     </div>
                     <div class="comming-text p-4">
-                      <h6 class="text-center px-5">Redes sociales para golfistas</h6>
-                      <p class="px-4 pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                      <h4 class="text-center px-lg-5">Comunidad Startup de Inversionistas</h4>
+                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
                     </div>
                   </div>
                 </div>
