@@ -4,9 +4,9 @@
           <slide v-for="professional in professionals" :key="professional">
               <div class="card comming-card">
                 <div class="d-flex justify-content-center">
-                  <img :src="professional.avatar" class="rounded-circle" alt="">
+                  <img :src="professional.avatar" class="rounded-circle avatar-img">
                 </div>
-                <div class="comming-text p-4">
+                <div class="comming-text p-2">
                   <h4 class="text-center">{{ professional.name }}</h4>
                   <h4 class="text-center">{{ professional.job }}</h4>
                 </div>
@@ -37,22 +37,22 @@ export default {
       },
       professionals: [
         {
-          avatar: 'img/avatars/avatar.jpg',
+          avatar: 'img/general/avatar-4.png',
           name: 'Evans Caimacol',
           job: 'CEO'
         },
         {
-          avatar: 'img/avatars/avatar.jpg',
+          avatar: 'img/general/avatar-3.png',
           name: 'Carol Caimacol',
           job: 'Cto'
         },
         {
-          avatar: 'img/avatars/avatar.jpg',
+          avatar: 'img/general/avatar-5.png',
           name: 'Evans Caimacol',
           job: 'Cfo'
         },
         {
-          avatar: 'img/avatars/avatar.jpg',
+          avatar: 'img/general/avatar-6.png',
           name: 'Roxi Caimacol',
           job: 'Cfo'
         },
