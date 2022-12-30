@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Investor extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'description',
+        'category_id'
+    ];
+
 }

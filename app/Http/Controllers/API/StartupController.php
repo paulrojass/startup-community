@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests\StoreStartupRequest;
 use App\Http\Requests\UpdateStartupRequest;
 use App\Http\Controllers\API\BaseController as BaseController;
+use App\Models\Professional;
+use App\Models\Investor;
 use App\Models\Startup;
 use App\Models\User;
 use Validator;
@@ -23,16 +25,23 @@ class StartupController extends BaseController
     {
         //dd($request->all());
 
-        if ($request->search) {
-            $startups = Startup::search($request->search)->paginate(10);
-            //$startups = Startup::paginate(10);
+        // $startup = Startup::all();
+        // $professional = Professional::all();
+        // $investor = Investor::all();
 
+        // $elements = $startup;
+        // $elements = $elements->merge($professional);
+        // $elements = $elements->merge($investor);
+
+        if ($request->search) {
+            //$elements = Startup::search($request->search)->paginate(10);
+            $elements = Startup::paginate(10);
         } else {
-            //$startups = Startup::all();
-            $startups = Startup::paginate(10);
+            //$elements = Startup::all();
+            $elements = Startup::paginate(10);
         }
 
-        return response()->json($startups);
+        return response()->json($elements);
         //return $this->sendResponse(StartupResource::collection($startups), 'Startups retrieved successfully.');
     }
     /**

@@ -92,12 +92,26 @@
           </div>
         </section><!-- End Features Section -->
 
-        <!-- <section class="frame-blue py-3">
-          <div class="container">
-            <h2>StartUps en desarrollo</h2>
+        <section class="py-4 bg-professionals">
+          <div class="container text-center">
+            <h2>Una comunidad fuera de este mundo</h2>
+            <h4 class="mx-auto" style="width: 80%;">
+              El mundo está cambiando constantemente y tú puedes ser parte de la tripulación
+              junto a profesionales e inversores que te ayudarán a convertir tus ideas y proyectos en una nave hacia otros universos de alto valor.
+            </h4>
+            <div class="d-flex justify-content-center py-5">
+              <div class="comming-soon">
+                PRÓXIMAMENTE
+              </div>
+            </div>
+
+            <div class="mx-lg-5">
+              <professionals-section></professionals-section>
+            </div>
+
+            <div class="d-lines"></div>
           </div>
-        </section> -->
-        <!-- End Clients Section -->
+        </section>
 
         <!-- ======= Features Section ======= -->
         <section data-aos="fade-up" class="bg-moon py-5 ">

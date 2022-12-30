@@ -39,7 +39,7 @@
             <div class="row align-items-center">
               <div class="col-lg-12 text-center">
                 <h1 class="">
-                  Invierte en ideas fuera de<br/>
+                  Invierte en <br/>ideas fuera de
                   este planeta
                 </h1>
                 <h4 class="py-4">
@@ -59,26 +59,6 @@
             </div>
           </div>
         </section><!-- End About Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     
         <!-- ======= Features Section ======= -->
@@ -137,47 +117,11 @@
                 </div>
               </div>
             </div>
-            <div class="row px-lg-5 pb-4">
-              <div class="col-lg-4">
-                <div class="card comming-card">
-                  <div class="">
-                    <div class="d-flex justify-content-center">
-                      <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
-                    </div>
-                    <div class="comming-text p-4">
-                      <h4 class="text-center px-lg-5">Redes sociales para golfistas</h4>
-                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card comming-card">
-                  <div class="">
-                    <div class="d-flex justify-content-center">
-                      <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
-                    </div>
-                    <div class="comming-text p-4">
-                      <h4 class="text-center px-lg-5">Redes sociales para Artistas</h4>
-                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card comming-card">
-                  <div class="">
-                    <div class="d-flex justify-content-center">
-                      <img src="storage/images/logos/default.png" class="rounded-circle" alt="">
-                    </div>
-                    <div class="comming-text p-4">
-                      <h4 class="text-center px-lg-5">Comunidad Startup de Inversionistas</h4>
-                      <h6 class="text-center px-lg-4 pt-2">t dt duis enim velit mollit. uis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+            <div class="mx-lg-5">
+              <professionals-section></professionals-section>
             </div>
+
             <div class="container-fluid pb-5">
               <div class="row">
                 <div class=" col-12 d-flex justify-content-center ">
@@ -212,9 +156,17 @@
 </template>
 
 <script>
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
   export default {
-
-  }
+    name: 'App',
+    components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
+}
 </script>
 
 <style lang="scss" scoped>

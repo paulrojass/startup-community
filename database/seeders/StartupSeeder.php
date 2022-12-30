@@ -51,7 +51,6 @@ class StartupSeeder extends Seeder
                             'name' => $startup],
                         [
                             'user_id' => $user->id,
-                            'country' => 1
                         ]
                     );
                 }

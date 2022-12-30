@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('investors', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->string('category_id')->nullable();
+            $table->string('description')->nullable();          
             $table->timestamps();
         });
     }

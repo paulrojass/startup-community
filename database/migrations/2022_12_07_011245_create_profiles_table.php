@@ -22,6 +22,7 @@ return new class extends Migration
             $table->text('address');
             $table->string('phone');
             $table->string('avatar');
+            $table->string('country_id');
             $table->timestamps();
         });
     }

@@ -21,8 +21,10 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         // Crear perfiles de usuarios
         $this->call(ProfileSeeder::class);
-        \App\Models\User::factory(50)->create();
+        \App\Models\User::factory(150)->create();
         //\App\Models\Startup::factory(50)->create();
         $this->call(StartupSeeder::class);
+        \App\Models\Professional::factory(50)->create();
+        \App\Models\Investor::factory(50)->create();
     }
 }

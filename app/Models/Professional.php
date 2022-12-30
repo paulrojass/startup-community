@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Professional extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'description',
+        'category_id'
+    ];
+
 }

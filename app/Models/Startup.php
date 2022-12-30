@@ -22,7 +22,6 @@ class Startup extends Model
         'url',
         'financial_need',
         'logo',
-        'country'
     ];
 
     /**

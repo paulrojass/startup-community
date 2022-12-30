@@ -14,6 +14,7 @@ import '../assets/vendor/aos/aos.css';
 import '../assets/vendor/glightbox/css/glightbox.min.css';
 import '../assets/vendor/remixicon/remixicon.css';
 import '../assets/vendor/swiper/swiper-bundle.min.css';
+import 'vue3-carousel/dist/carousel.css'
 
 // import '../assets/vendor/purecounter/purecounter_vanilla';
 // import '../assets/vendor/aos/aos';
@@ -32,6 +33,9 @@ aos.init();
 // import VueSlider from 'vue-slider-component'
 // import 'vue-slider-component/theme/default.css'
 
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
 
 import { createApp } from 'vue';
 
@@ -47,6 +51,8 @@ import StartupsComponent from './components/StartupsComponent.vue';
 import InformationComponent from './components/InformationComponent.vue';
 import SingleComponent from './components/SingleComponent.vue';
 import StartupCreateComponent from './components/forms/StartupCreateComponent.vue';
+import ProfessionalsSection from './components/sections/ProfessionalsSection.vue';
+
 //Modals
 import SendSuscribe from './components/forms/SendSuscribe.vue';
 import SuccessSubscribe from './components/sections/SuccessSubscribe.vue';
@@ -80,6 +86,7 @@ app.component('home-component', HomeComponent);
 app.component('investor-component', InvestorComponent);
 app.component('startup-landing-component', StartupLandingComponent);
 app.component('professional-component', ProfessionalComponent);
+app.component('professionals-section', ProfessionalsSection);
 
 //app.component('VueSlider', VueSlider)
 

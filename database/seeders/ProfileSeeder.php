@@ -42,6 +42,7 @@ class ProfileSeeder extends Seeder
                             'address' => fake()->address(),
                             'phone' => fake()->e164PhoneNumber(),
                             'avatar' => 'images/avatars/default.jpg',
+                            'country_id'=> 1
                         ]
                     );
                 }

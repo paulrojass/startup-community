@@ -15,10 +15,21 @@
                                             <div class="input-group">
                                                 <span class="input-group-text icon-input">
                                                     <i class="bi bi-sliders me-3"></i>
-                                                    Filtrar por:
                                                 </span>
+                                                <div class="rail-select">
+                                                <select class="form-select shadow-none search-input" name="category" aria-label="Default select example">
+                                                    <option value="" selected disabled hidden>Categorías</option>
+                                                    <option value="startup">Startup</option>
+                                                    <!-- <option value="professional">Profesional</option>
+                                                    <option value="investor">Inversor</option> -->
+                                                </select>
+                                                </div>
+
+
                                                 <input type="text" class="form-control shadow-none search-input" name="search" id="search"
-                                                v-model="inputSearch" v-on:keyup.enter="getResults(1)">
+                                                v-model="inputSearch" v-on:keyup.enter="getResults(1)"
+                                                placeholder="Colocar tu búsqueda aquí"
+                                                >
                                                 <button class="btn btn-primary rounded-circle" type="submit" 
                                                 @click="getResults(1)">
                                                     <i class="bi bi-search"></i>

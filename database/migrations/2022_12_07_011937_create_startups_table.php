@@ -23,7 +23,6 @@ return new class extends Migration
             $table->decimal('financial_need', 10, 2)->nullable();
             $table->string('logo')
                 ->default('storage/images/logos/default.png');
-            $table->string('country');
             $table->timestamps();
         });
     }

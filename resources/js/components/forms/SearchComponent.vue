@@ -10,7 +10,7 @@
 
                 <div class="rail-select">
                 <select class="form-select shadow-none search-input" name="category" aria-label="Default select example">
-                    <option value="">Categorías</option>
+                    <option value="" selected disabled hidden>Categorías</option>
                     <option value="startup">Startup</option>
                     <!-- <option value="professional">Profesional</option>
                     <option value="investor">Inversor</option> -->

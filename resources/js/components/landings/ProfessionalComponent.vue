@@ -120,17 +120,21 @@
 
         <!-- ======= Features Section ======= -->
         <section data-aos="fade-up" class="bg-moon">
-          <div class="container">
-            <div class="d-lines"></div>
+          <div class="container py-5">
             <div class="text-center"> 
               <h2>Conoce los últimos Profesionales</h2>
-              <div class="d-flex justify-content-center py-5">
+              <div class="d-flex justify-content-center py-4">
                 <div class="comming-soon">
                   PRÓXIMAMENTE
                 </div>
               </div>
             </div>
-            <div class="row px-lg-5 pb-4">
+
+            <div class="mx-lg-5">
+              <professionals-section></professionals-section>
+            </div>
+
+            <!-- <div class="row px-lg-5 pb-4">
               <div class="col-lg-4">
                 <div class="card comming-card">
                   <div class="">
@@ -170,7 +174,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="container-fluid pb-5">
               <div class="row pb-5 ">
                 <div class=" col-12 d-flex justify-content-center ">
@@ -178,6 +182,19 @@
                     data-bs-toggle="modal" data-bs-target="#modal-investor"
                     >¡QUIERO TRABAJAR!
                   </button>
+                </div>
+              </div>
+            </div>
+            <div class="container d-none d-md-block">
+              <div class="row align-items-lg-end align-items-sm-start " style="height: 40%">
+                <div class="col-lg-4 col-xs-12 text-center">
+                  <a href="startup"      class="btn btn-outline-primary" style="min-width:300px">STARTUP O PROYECTOS</a>
+                </div>
+                <div class="col-lg-4 col-xs-12 text-center">
+                  <a href="professional" class="btn btn-outline-primary" style="min-width:300px">PROFESIONALES</a>
+                </div>
+                <div class="col-lg-4 col-xs-12 text-center">
+                  <a href="investor"     class="btn btn-outline-primary" style="min-width:300px">INVERSOR</a>
                 </div>
               </div>
             </div>
@@ -192,9 +209,9 @@
 </template>
 
 <script>
-  export default {
-
-  }
+export default {
+  name: 'ProfessionalComponent'
+}
 </script>
 
 <style lang="scss" scoped>

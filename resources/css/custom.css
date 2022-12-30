@@ -379,6 +379,11 @@ label {
   background: url(/img/general/bg_login.png) no-repeat center top;
 }
 
+.bg-professionals {
+  background: url(/img/startup/bg-professionals.png) no-repeat center bottom;
+}
+
+
 .benefit-item {
   background: url(/img/backgrounds/benefit-item.png) no-repeat center top;
   max-height: 78px;
@@ -783,4 +788,10 @@ dashborad content
 
 .dark-text {
   color:#0071BC;
+}
+
+
+/* Sliders */
+.carousel__prev, .carousel__next {
+  color: #fff !important;
 }
