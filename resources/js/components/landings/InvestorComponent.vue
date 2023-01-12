@@ -1,28 +1,25 @@
 <template>
     <div>
-
-        <!-- ======= About Section ======= -->
         <section>
           <div class="container-fluid px-0 d-none d-md-block align-center">
-            <div class="row align-items-centerposition-relative ">
-              <div class="col-lg-12 d-flex justify-content-end ">
-                <img src="img/backgrounds/investor_bg2.png" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-12 position-absolute text-center py-lg-5"
-                data-aos="flip-right"
-                data-aos-duration="1200">
-                <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="">
+            <div class="row mx-0 justify-content-center">
+          
+              <div class="col-lg-12 bg-investor-main">
+                <div class="py-lg-5">
+                  <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="" data-aos="flip-right"
+                    data-aos-duration="1200">
+                </div>
               </div>
               <div class="col-lg-12 text-center position-absolute py-5">
                 <h1 class="pt-5">
-                  Invierte en ideas fuera de<br/>
+                  Invierte en ideas fuera de<br />
                   este planeta
                 </h1>
                 <h4 class="pb-4">
                   ¿Tienes el combustible necesario para hacer despegar esa StartUp única?
                 </h4>
                 <h3>
-                  Busca o deja que te encuentren los inversores más<br/>
+                  Busca o deja que te encuentren los inversores más<br />
                   adecuados para ello.
                 </h3>
                 <h5 class="py-4">
@@ -30,10 +27,10 @@
                 </h5>
                 <div class="container">
                   <search-component></search-component>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
           <div class="container-fluid d-block d-md-none py-4">
             <div class="row align-items-center">
@@ -58,7 +55,8 @@
               </div>
             </div>
           </div>
-        </section><!-- End About Section -->
+        </section>
+        <!-- End About Section -->
 
     
         <!-- ======= Features Section ======= -->

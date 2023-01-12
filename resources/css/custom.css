@@ -358,9 +358,16 @@ label {
   height: 600px;
 }
 
+.bg-investor-main {
+  background: url(/img/backgrounds/investor_bg.png) no-repeat right center;
+  max-width: 1440px;
+}
+
 .bg-startup-main {
   background: url(/img/startup/bg-main.png) no-repeat right bottom;
   height: 619px;
+  max-width: 1440px;
+
 }
 
 .bg-moon {

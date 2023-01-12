@@ -1,15 +1,17 @@
 <template>
     <div>
-        <!-- ======= About Section ======= -->
-        <section class="professional-main py-auto me-0">
-          <div class="container-fluid px-0 d-none d-md-block">
+        <section >
+          <div class="container-fluid px-0 d-none d-md-block align-center">
             <div class="row position-relative align-items-center">
-              <div class="col-lg-12  d-flex justify-content-end">
-                <img src="img/backgrounds/professional_bg.png" class="img-fluid " alt="">
+              <div class="col-lg-12">
+                <img src="img/backgrounds/professional_bg.png" class="float-end">
               </div>
-              <div class="col-lg-12 position-absolute" data-aos="flip-right" data-aos-duration="1200">
+              <div class="col-lg-12 position-absolute text-center py-lg-5"
+                data-aos="flip-right"
+                data-aos-duration="1200">
                 <img src="img/backgrounds/investor_space.png" class="img-fluid" alt="">
               </div>
+
               <div class="col-lg-12 position-absolute text-center">
                 <h1 class="pb-4">
                   Podrás formar parte de la<br />
@@ -48,36 +50,7 @@
             </div>
           </div>
         </section><!-- End About Section -->
-    
-        <!-- ======= Clients Section ======= -->
-        <!-- <section class="frame-blue pt-5">
-          <div class="container text-center" data-aos="fade-up">
-            <div class="row">
-              <div class="col-lg-6 img-person d-none d-lg-block">
-                <img src="img/professional/person.png" alt="">
-              </div>
-              <div class="col-lg-6 text-center pb-5">
-                <h2>Da a conocer tu perfil</h2>
-                <h4>
-                  Gracias a tu información profesional podrán conocerte profesionales o inversores
-                </h4>
-                <div class="row">
-                  <div class="col-lg-4">
-                    <img src="img/professional/item-1.png" alt="">
-                  </div>
-                  <div class="col-lg-4">
-                    <img src="img/professional/item-2.png" alt="">
-                  </div>
-                  <div class="col-lg-4">
-                    <img src="img/professional/item-3.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-        <!-- End Clients Section -->
-    
+
         <!-- ======= Features Section ======= -->
         <section class="frame-blue py-4">
           <div class="container px-lg-5">

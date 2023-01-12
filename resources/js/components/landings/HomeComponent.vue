@@ -4,7 +4,7 @@
     <section>
       <div class="container-fluid pt-5 d-none d-lg-block ">
         <div class="row pt-5">
-          <div class="col-12">
+          <div class="col-12 text-center">
             <img src="img/backgrounds/astro_bg_home.png" class="img-fluid" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
               data-aos-duration="5000" data-aos-offset="0">
           </div>
@@ -22,7 +22,9 @@
               <strong>proyectos únicos</strong> que te permitan alcanzar <strong>nuevos universos.</strong> 
             </h5>
             <h2 class="pt-5">¡Somos la Comunidad StartUp!</h2>
-            <search-component></search-component>
+                <div class="container">
+                  <search-component></search-component>
+                </div> 
           </div>
         </div>
       </div>
@@ -247,7 +249,8 @@
             <h2 class="text-strong">Conoce nuestros tres universos</h2>
           </div>
         </div>
-        <div class="row align-items-sm-end align-items-xs-start" style="height: 50%">
+        <!-- <div class="container"> -->
+        <div class="row align-items-sm-end align-items-xs-start" style="height:50%">
           <div class="col-md-4 col-xs-12 text-center">
             <a :href="this.startupRoute"      class="btn btn-outline-primary" style="min-width:200px">Startup</a>
           </div>
@@ -257,7 +260,9 @@
           <div class="col-md-4 col-xs-12 text-center">
             <a :href="this.investorRoute"     class="btn btn-outline-primary" style="min-width:200px">Inversor</a>
           </div>
-        </div>
+        </div>          
+        <!-- </div> -->
+
         <div class="row align-items-end pb-5" style="height: 35%">
           <div class="col-12 text-center">
             <button class="btn btn-primary btn-lg" type="button"
